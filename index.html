@@ -175,6 +175,17 @@
             color: #00C49F; /* Accent color */
             font-weight: 700;
         }
+        #calendlyModal .modal-content { /* Specific styling for Calendly modal */
+            max-width: 900px; /* Wider for Calendly embed */
+            width: 95%;
+            height: 85vh; /* Taller for Calendly embed */
+            padding: 1rem; /* Reduced padding for more iframe space */
+        }
+        #calendlyFrame {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
     </style>
 
     <script type="application/ld+json">
@@ -182,7 +193,7 @@
       "@context": "https://schema.org",
       "@type": "Organization",
       "name": "E-Prosper Academy™",
-      "url": "https://www.muchneededtool.com/",
+      "url": "https://www.eprosper.academy",
       "logo": "https://cdn.abacus.ai/images/5cef3838-8f06-440f-ba73-723c798abb8a.png",
       "description": "Unlock 37+ years of real-world wisdom with E-Prosper Academy™. Master Online AI Digital Success, Real Estate Investing (Flipping & Advanced), and Asset Protection Trusts.",
       "founder": {
@@ -200,7 +211,7 @@
         "@type": "ReserveAction",
         "target": {
           "@type": "EntryPoint",
-          "urlTemplate": "https://www.muchneededtool.com/#programs",
+          "urlTemplate": "https://www.eprosper.academy/#programs",
           "actionPlatform": [
             "http://schema.org/DesktopWebPlatform",
             "http://schema.org/IOSPlatform",
@@ -220,7 +231,7 @@
       "provider": {
         "@type": "Organization",
         "name": "E-Prosper Academy™",
-        "sameAs": "https://www.muchneededtool.com/"
+        "sameAs": "https://www.eprosper.academy"
       },
       "offers": {
         "@type": "Offer",
@@ -228,7 +239,7 @@
         "priceCurrency": "USD",
         "category": "Digital Marketing Course",
         "availability": "https://schema.org/InStock",
-        "url": "https://www.muchneededtool.com/#ai"
+        "url": "https://www.eprosper.academy/#ai"
       }
     }
     </script>
@@ -241,7 +252,7 @@
       "provider": {
         "@type": "Organization",
         "name": "E-Prosper Academy™",
-        "sameAs": "https://www.muchneededtool.com/"
+        "sameAs": "https://www.eprosper.academy"
       },
       "offers": {
         "@type": "Offer",
@@ -249,7 +260,7 @@
         "priceCurrency": "USD",
         "category": "Real Estate Investing Course",
         "availability": "https://schema.org/InStock",
-        "url": "https://www.muchneededtool.com/#re"
+        "url": "https://www.eprosper.academy/#re"
       }
     }
     </script>
@@ -262,7 +273,7 @@
       "provider": {
         "@type": "Organization",
         "name": "E-Prosper Academy™",
-        "sameAs": "https://www.muchneededtool.com/"
+        "sameAs": "https://www.eprosper.academy"
       },
       "offers": {
         "@type": "Offer",
@@ -270,7 +281,7 @@
         "priceCurrency": "USD",
         "category": "Advanced Investment Course",
         "availability": "https://schema.org/InStock",
-        "url": "https://www.muchneededtool.com/#adv-re"
+        "url": "https://www.eprosper.academy/#adv-re"
       }
     }
     </script>
@@ -285,7 +296,7 @@
       },
       "name": "E-Prosper Academy™ Asset Protection & Trusts",
       "description": "Learn how to safeguard your hard-earned assets with strategic wealth protection. This educational program demystifies trusts and other asset protection strategies, showing you how to build a fortress around your wealth. (Educational content only, not legal advice).",
-      "url": "https://www.muchneededtool.com/#trusts",
+      "url": "https://www.eprosper.academy/#trusts",
       "isRelatedTo": [
         {
           "@type": "Product",
@@ -348,7 +359,7 @@
                     Tap into 37+ years of real-world experience with E-Prosper Academy™. Our specialized programs cover Online AI Digital Success, Real Estate Investing, and Asset Protection Trusts. This isn't just theory; it's actionable "hard knock life" knowledge.
                 </p>
                 <div class="mt-10">
-                    <a href="#programs" class="enroll-button-main inline-block px-8 py-4 text-lg text-white font-bold rounded-lg gradient-bg hover:opacity-90 transition-opacity shadow-lg" data-target-tab="ai">
+                    <a href="#programs" class="enroll-button-main inline-block px-8 py-3 text-lg text-white font-bold rounded-lg gradient-bg hover:opacity-90 transition-opacity shadow-lg" data-target-tab="ai">
                         Explore Our Programs
                     </a>
                 </div>
@@ -470,9 +481,9 @@
                                 <li>Common pitfalls in asset protection and how to avoid them.</li>
                             </ul>
                            <p class="text-3xl font-bold gradient-text mb-6">Price: Enquire Within</p>
-                           <a href="mailto:youremail@example.com?subject=Enquiry: E-Prosper Academy - Asset Protection & Trusts Program" class="inline-block w-full sm:w-auto px-10 py-3 text-lg text-white font-bold rounded-lg bg-gray-700 hover:bg-gray-600 transition-opacity shadow-md">
-                                Learn More & Enquire
-                            </a>
+                           <button id="scheduleConsultationBtn" class="inline-block w-full sm:w-auto px-10 py-3 text-lg text-white font-bold rounded-lg bg-blue-600 hover:bg-blue-700 transition-opacity shadow-md">
+                                Schedule a Free Consultation
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -623,6 +634,15 @@
         </div>
     </div>
 
+    <div id="calendlyModal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="calendlyModalHeading">
+        <div class="modal-content">
+            <button id="closeCalendlyModalButton" class="modal-close-button" aria-label="Close">&times;</button>
+            <h2 id="calendlyModalHeading" class="text-xl font-semibold text-gray-800 mb-4 text-center">Schedule Your Free Consultation</h2>
+            <div class="w-full h-[70vh]"> <iframe id="calendlyFrame" src="" style="width:100%; height:100%; border:0;" frameborder="0" title="Schedule a consultation with E-Prosper Academy"></iframe>
+            </div>
+        </div>
+    </div>
+
 
     <script>
         document.addEventListener('DOMContentLoaded', () => {
@@ -647,7 +667,7 @@
 
             function activateTab(tabId) {
                 tabButtons.forEach(btn => {
-                    btn.classList.remove('tab-active', 'tab-inactive');
+                    btn.classList.remove('tab-active', 'tab-inactive'); 
                     if (btn.dataset.tab === tabId) {
                         btn.classList.add('tab-active');
                         btn.setAttribute('aria-selected', 'true');
@@ -673,31 +693,23 @@
                     
                     window.scrollTo({ top: offsetPosition, behavior: 'smooth'});
                     
-                    // If this link is specifically for programs and targets the AI tab
-                    if (this.dataset.targetTab === 'ai' && targetHash === '#programs') {
-                       activateTab('ai');
+                    if (this.dataset.targetTab && targetHash === '#programs') {
+                       activateTab(this.dataset.targetTab);
                     }
                 }
-                if(mobileMenu.classList.contains('hidden') === false && mobileMenu.contains(event.target)) {
+                if (!mobileMenu.classList.contains('hidden') && mobileMenu.contains(this)) {
                     mobileMenu.classList.add('hidden');
                 }
             }
 
-            // Attach to specific navigation links that are NOT program enrollment buttons
-            document.querySelectorAll('nav a[href="#hero"], nav a[href="#about"], nav a[href="#community"]').forEach(anchor => {
-                anchor.addEventListener('click', handleNavigationClick);
+            document.querySelectorAll('header nav a[href^="#"], #mobile-menu a[href^="#"]').forEach(anchor => {
+                if (!anchor.classList.contains('enroll-button')) { 
+                    anchor.addEventListener('click', handleNavigationClick);
+                }
             });
-            document.querySelectorAll('#mobile-menu a[href="#hero"], #mobile-menu a[href="#about"], #mobile-menu a[href="#community"]').forEach(anchor => {
-                anchor.addEventListener('click', handleNavigationClick);
-            });
-            
-            // Special handling for "Explore Our Programs" (hero) and nav "Our Programs"/"Enroll Now"
             if(mainEnrollButton) {
-                mainEnrollButton.addEventListener('click', handleNavigationClick); // Use the same handler
+                mainEnrollButton.addEventListener('click', handleNavigationClick);
             }
-            navEnrollLinks.forEach(link => { // These are the "Our Programs" and "Enroll Now" in nav
-                link.addEventListener('click', handleNavigationClick); // Use the same handler
-            });
 
 
             window.addEventListener('scroll', () => {
@@ -749,6 +761,11 @@
             const closePaymentModalButton = document.getElementById('closePaymentModalButton');
             
             const enrollProgramButtons = document.querySelectorAll('.enroll-button'); 
+            const scheduleConsultationButton = document.getElementById('scheduleConsultationBtn');
+            const calendlyModal = document.getElementById('calendlyModal');
+            const closeCalendlyModalButton = document.getElementById('closeCalendlyModalButton');
+            const calendlyFrame = document.getElementById('calendlyFrame');
+            const calendlyUrl = "https://cal.com/tonyp-marketing/15min";
 
             function showPurchaseModal(programName, programPriceString, numericPrice) { 
                 currentProgramName = programName;
@@ -799,44 +816,101 @@
             });
             
             // OTO Modal Buttons
-            closeOtoModalButton.addEventListener('click', () => otoModal.classList.remove('active'));
-            otoModal.addEventListener('click', (event) => { if (event.target === otoModal) otoModal.classList.remove('active'); });
-
-            upgradeToAdvancedButton.addEventListener('click', () => {
-                const programName = upgradeToAdvancedButton.dataset.programName;
-                const programPriceString = upgradeToAdvancedButton.dataset.programPrice;
-                const numericPrice = upgradeToAdvancedButton.dataset.numericPrice;
-                otoModal.classList.remove('active');
-                showPurchaseModal(programName, programPriceString, numericPrice);
-            });
-
-            stickWithMasteryButton.addEventListener('click', () => {
-                const programName = stickWithMasteryButton.dataset.programName;
-                const programPriceString = stickWithMasteryButton.dataset.programPrice;
-                const numericPrice = stickWithMasteryButton.dataset.numericPrice;
-                otoModal.classList.remove('active');
-                showPurchaseModal(programName, programPriceString, numericPrice);
-            });
+            if (closeOtoModalButton) {
+                closeOtoModalButton.addEventListener('click', () => otoModal.classList.remove('active'));
+            }
+            if (otoModal) {
+                otoModal.addEventListener('click', (event) => { if (event.target === otoModal) otoModal.classList.remove('active'); });
+            }
+            if (upgradeToAdvancedButton) {
+                upgradeToAdvancedButton.addEventListener('click', () => {
+                    const programName = upgradeToAdvancedButton.dataset.programName;
+                    const programPriceString = upgradeToAdvancedButton.dataset.programPrice;
+                    const numericPrice = upgradeToAdvancedButton.dataset.numericPrice;
+                    otoModal.classList.remove('active');
+                    showPurchaseModal(programName, programPriceString, numericPrice);
+                });
+            }
+            if (stickWithMasteryButton) {
+                stickWithMasteryButton.addEventListener('click', () => {
+                    const programName = stickWithMasteryButton.dataset.programName;
+                    const programPriceString = stickWithMasteryButton.dataset.programPrice;
+                    const numericPrice = stickWithMasteryButton.dataset.numericPrice;
+                    otoModal.classList.remove('active');
+                    showPurchaseModal(programName, programPriceString, numericPrice);
+                });
+            }
 
             // Purchase Disclaimer Modal Buttons
-            cancelModalButton.addEventListener('click', () => purchaseModal.classList.remove('active'));
-            closePurchaseModalButton.addEventListener('click', () => purchaseModal.classList.remove('active'));
-            purchaseModal.addEventListener('click', (event) => { if (event.target === purchaseModal) purchaseModal.classList.remove('active');});
+            if (cancelModalButton) {
+                cancelModalButton.addEventListener('click', () => purchaseModal.classList.remove('active'));
+            }
+            if (closePurchaseModalButton) {
+                closePurchaseModalButton.addEventListener('click', () => purchaseModal.classList.remove('active'));
+            }
+            if (purchaseModal) {
+                purchaseModal.addEventListener('click', (event) => { if (event.target === purchaseModal) purchaseModal.classList.remove('active');});
+            }
+            
+            if (disclaimerAgreeCheckbox) {
+                disclaimerAgreeCheckbox.addEventListener('change', () => {
+                    proceedToPaymentButton.disabled = !disclaimerAgreeCheckbox.checked;
+                });
+            }
 
-            disclaimerAgreeCheckbox.addEventListener('change', () => {
-                proceedToPaymentButton.disabled = !disclaimerAgreeCheckbox.checked;
-            });
-
-            proceedToPaymentButton.addEventListener('click', () => {
-                if (!disclaimerAgreeCheckbox.checked) return;
-                purchaseModal.classList.remove('active');
-                showPaymentModal(); 
-            });
+            if (proceedToPaymentButton) {
+                proceedToPaymentButton.addEventListener('click', () => {
+                    if (!disclaimerAgreeCheckbox.checked) return;
+                    purchaseModal.classList.remove('active');
+                    showPaymentModal(); 
+                });
+            }
 
             // Payment Modal Buttons
-            returnToSiteButton.addEventListener('click', () => paymentModal.classList.remove('active'));
-            closePaymentModalButton.addEventListener('click', () => paymentModal.classList.remove('active'));
-            paymentModal.addEventListener('click', (event) => { if (event.target === paymentModal) paymentModal.classList.remove('active');});
+            if (returnToSiteButton) {
+                returnToSiteButton.addEventListener('click', () => paymentModal.classList.remove('active'));
+            }
+            if (closePaymentModalButton) {
+                closePaymentModalButton.addEventListener('click', () => paymentModal.classList.remove('active'));
+            }
+            if (paymentModal) {
+                paymentModal.addEventListener('click', (event) => { if (event.target === paymentModal) paymentModal.classList.remove('active');});
+            }
+
+            // Calendly Modal Logic
+            if (scheduleConsultationButton) {
+                scheduleConsultationButton.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    if (calendlyFrame) {
+                        calendlyFrame.src = calendlyUrl; // Set src when modal is opened
+                    }
+                    if (calendlyModal) {
+                        calendlyModal.classList.add('active');
+                    }
+                });
+            }
+
+            if (closeCalendlyModalButton) {
+                closeCalendlyModalButton.addEventListener('click', () => {
+                    if (calendlyModal) {
+                        calendlyModal.classList.remove('active');
+                    }
+                    if (calendlyFrame) {
+                        calendlyFrame.src = ""; // Clear src to stop loading/potential background activity
+                    }
+                });
+            }
+            
+            if (calendlyModal) {
+                calendlyModal.addEventListener('click', (event) => { 
+                    if (event.target === calendlyModal) { // Click on overlay itself
+                        calendlyModal.classList.remove('active');
+                        if (calendlyFrame) {
+                            calendlyFrame.src = ""; // Clear src
+                        }
+                    }
+                });
+            }
 
         });
     </script>
