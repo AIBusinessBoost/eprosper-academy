@@ -75,7 +75,7 @@
         }
         .tab-inactive:hover {
             background-color: #ced4da; /* bg-gray-300 */
-            border-color: #adb5bd; /* border-gray-400 */
+            border-color: #adb5bd; 
         }
         .disclaimer-box {
             background-color: #FFF3CD;
@@ -140,22 +140,22 @@
         }
         .modal-content {
             background-color: white;
-            padding: 1.5rem; /* p-6 */
-            border-radius: 0.5rem; /* rounded-lg */
+            padding: 1.5rem;
+            border-radius: 0.5rem;
             box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04);
             width: 100%;
-            max-width: 600px; /* max-w-2xl */
+            max-width: 600px;
             max-height: 90vh;
             display: flex;
             flex-direction: column;
             position: relative;
         }
         .modal-disclaimer-text {
-            max-height: 150px; /* Adjusted height */
+            max-height: 150px;
             overflow-y: auto;
             background-color: #f9fafb; 
             border: 1px solid #e5e7eb; 
-            padding: 0.75rem; /* p-3 */
+            padding: 0.75rem;
             border-radius: 0.375rem; 
             font-size: 0.875rem; 
             color: #374151; 
@@ -163,27 +163,27 @@
         }
         .modal-close-button {
             position: absolute;
-            top: 0.75rem; /* p-3 */
-            right: 0.75rem; /* p-3 */
+            top: 0.75rem;
+            right: 0.75rem;
             background: none;
             border: none;
             font-size: 1.5rem;
             line-height: 1;
-            color: #9ca3af; /* gray-400 */
+            color: #9ca3af;
             cursor: pointer;
         }
         .modal-close-button:hover {
-            color: #374151; /* gray-700 */
+            color: #374151;
         }
         .oto-highlight {
-            color: #00C49F; /* Accent color */
+            color: #00C49F;
             font-weight: 700;
         }
-        #calendlyModal .modal-content { /* Specific styling for Calendly modal */
-            max-width: 900px; /* Wider for Calendly embed */
+        #calendlyModal .modal-content {
+            max-width: 900px;
             width: 95%;
-            height: 85vh; /* Taller for Calendly embed */
-            padding: 1rem; /* Reduced padding for more iframe space */
+            height: 85vh;
+            padding: 1rem;
         }
         #calendlyFrame {
             width: 100%;
@@ -318,10 +318,8 @@
       ]
     }
     </script>
-
 </head>
 <body class="antialiased">
-
     <header id="header" class="bg-white/80 backdrop-blur-lg fixed top-0 left-0 right-0 z-50 transition-all duration-300 shadow-sm">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex items-center justify-between h-20">
@@ -641,7 +639,7 @@
             </button>
         </div>
     </div>
-
+    
     <!-- Calendly Modal -->
     <div id="calendlyModal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="calendlyModalHeading">
         <div class="modal-content">
@@ -671,7 +669,7 @@
             });
             
             const mainEnrollButton = document.querySelector('.enroll-button-main');
-            const navLinks = document.querySelectorAll('header nav a[href^="#"], #mobile-menu a[href^="#"]'); // All nav links
+            const navLinks = document.querySelectorAll('header nav a[href^="#"], #mobile-menu a[href^="#"]'); 
 
             const tabButtons = document.querySelectorAll('.tab-button');
             const tabContents = document.querySelectorAll('.tab-content');
@@ -713,18 +711,15 @@
                     mobileMenu.classList.add('hidden');
                 }
             }
-
-            // Attach to general navigation links (excluding program-specific enroll buttons inside tabs)
+            
             navLinks.forEach(anchor => {
-                if (!anchor.classList.contains('enroll-button')) { // Exclude program-specific enroll buttons
+                 if (!anchor.classList.contains('enroll-button')) {
                     anchor.addEventListener('click', handleNavigationClick);
                 }
             });
-            // Specifically for the hero button
             if(mainEnrollButton) {
                 mainEnrollButton.addEventListener('click', handleNavigationClick);
             }
-
 
             window.addEventListener('scroll', () => {
                 if (window.scrollY > 50) {
@@ -779,7 +774,7 @@
             const calendlyModal = document.getElementById('calendlyModal');
             const closeCalendlyModalButton = document.getElementById('closeCalendlyModalButton');
             const calendlyFrame = document.getElementById('calendlyFrame');
-            const calendlyUrl = "https://cal.com/tonyp-marketing/15min";
+            const calendlyUrl = "https://cal.com/revenue-booster/15min";
 
             function showPurchaseModal(programName, programPriceString, numericPrice) { 
                 currentProgramName = programName;
@@ -788,12 +783,6 @@
 
                 if (purchaseModalHeadingElement) {
                      purchaseModalHeadingElement.textContent = `Confirm Enrollment: ${programName}`;
-                }
-                if (modalProgramNameEl) { 
-                    modalProgramNameEl.textContent = `Program: ${programName}`; 
-                }
-                if (modalProgramPriceEl) { 
-                    modalProgramPriceEl.textContent = programPriceString;
                 }
                 
                 disclaimerAgreeCheckbox.checked = false;
