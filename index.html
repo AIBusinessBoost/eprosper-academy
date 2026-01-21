@@ -4,226 +4,232 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- SEO - Primary Meta Tags -->
-    <title>E-Prosper Academy™ | Online AI, Real Estate & Asset Protection Mastery</title>
-    <meta name="description" content="Unlock 37+ years of real-world wisdom with E-Prosper Academy™. Master Online AI Digital Success, Real Estate Investing (Flipping & Advanced), and Asset Protection Trusts. Enroll in our high-impact programs today!">
-    <meta name="keywords" content="E-Prosper Academy, Online AI Digital Success, Real Estate Mastery, Advanced Real Estate Investment, Asset Protection Trusts, Financial Education, Mentorship, House Flipping Course, AI for Business, Wealth Creation, Investment Strategies, 37+ Years Experience, Financial Literacy, Business Coaching">
-    <link rel="canonical" href="https://www.eprosper.academy/">
+    <!-- AI & SEO - Primary Meta Tags -->
+    <title>E-Prosper Academy™ | Online AI Success, Real Estate & Asset Protection Mastery</title>
+    <meta name="description" content="Master wealth preservation and digital prosperity with over 37 years of real-world experience. E-Prosper Academy™ offers high-impact donor-based programs in Online AI Digital Success, Real Estate Investing, and Private Trust Asset Protection.">
+    <meta name="keywords" content="E-Prosper Academy, Online AI Digital Success, Real Estate Mastery, Advanced Real Estate Investment, Asset Protection Trusts, Financial Education, Mentorship, House Flipping Course, AI for Business, Wealth Creation, Investment Strategies, 37+ Years Experience, Financial Literacy, Business Coaching, Private Trusts">
+    <link rel="canonical" href="https://eprosper-academy.vercel.app/">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="author" content="E-Prosper Academy™ Trust">
 
     <!-- SEO - Open Graph / Facebook -->
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="E-Prosper Academy™ | Online AI, Real Estate & Asset Protection Mastery">
-    <meta property="og:description" content="Unlock 37+ years of real-world wisdom with E-Prosper Academy™. Master Online AI Digital Success, Real Estate Investing (Flipping & Advanced), and Asset Protection Trusts.">
-    <meta property="og:url" content="https://www.eprosper.academy/">
+    <meta property="og:title" content="E-Prosper Academy™ | Elite Financial Wisdom & Digital Success">
+    <meta property="og:description" content="Secure your legacy with 37+ years of elite wisdom. Master AI-driven wealth and structural asset protection today.">
+    <meta property="og:url" content="https://eprosper-academy.vercel.app/">
     <meta property="og:site_name" content="E-Prosper Academy™">
     <meta property="og:image" content="https://cdn.abacus.ai/images/5cef3838-8f06-440f-ba73-723c798abb8a.png">
-    <meta property="og:image:width" content="800">
-    <meta property="og:image:height" content="800">
-    <meta property="og:image:alt" content="E-Prosper Academy Logo - Path to Prosperity">
-
+    <meta property="og:image:alt" content="E-Prosper Academy™ Logo - Path to Prosperity">
 
     <!-- SEO - Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="E-Prosper Academy™ | Online AI, Real Estate & Asset Protection Mastery">
-    <meta name="twitter:description" content="Unlock 37+ years of real-world wisdom with E-Prosper Academy™. Master Online AI Digital Success, Real Estate Investing (Flipping & Advanced), and Asset Protection Trusts.">
+    <meta name="twitter:title" content="E-Prosper Academy™ | Online AI & Real Estate Mastery">
+    <meta name="twitter:description" content="Acquire over 37 years of elite wisdom. Secure your legacy and expand your empire with E-Prosper Academy™.">
     <meta name="twitter:image" content="https://cdn.abacus.ai/images/5cef3838-8f06-440f-ba73-723c798abb8a.png">
-    <meta name="twitter:image:alt" content="E-Prosper Academy Logo">
-    <meta name="twitter:url" content="https://www.eprosper.academy/">
 
-
-    <!-- Favicon (Generic Base64 - Replace with your own) -->
+    <!-- Favicon -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎓</text></svg>">
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
     <style>
         body {
             font-family: 'Inter', sans-serif;
             background-color: #F8F9FA;
             color: #212529;
         }
+        body.modal-open { overflow: hidden; }
+        
         .gradient-text {
             background: linear-gradient(90deg, #1E90FF, #00C49F);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-        .gradient-bg {
-            background: linear-gradient(90deg, #1E90FF, #00C49F);
+        .gradient-bg { background: linear-gradient(90deg, #1E90FF, #00C49F); }
+        
+        @keyframes cta-pulse {
+            0% { box-shadow: 0 0 0 0 rgba(30, 144, 255, 0.4); }
+            70% { box-shadow: 0 0 0 15px rgba(30, 144, 255, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(30, 144, 255, 0); }
         }
-        .tab-button {
-            padding: 0.75rem 1.5rem; /* py-3 px-6 */
-            border-radius: 0.5rem; /* rounded-lg */
-            font-weight: 500; /* medium */
-            transition: all 0.2s ease-in-out;
+        .cta-button-powerful {
+            animation: cta-pulse 2s infinite;
+            transition: all 0.3s ease;
+        }
+        .cta-button-powerful:hover { transform: scale(1.05); filter: brightness(1.1); }
+
+        /* CINEMATIC VIDEO BACKGROUND LOCK */
+        .hero-video-container {
+            position: relative;
+            height: auto;
+            min-height: 850px;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #000;
+        }
+        .hero-video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            transform: translate(-50%, -50%);
+            object-fit: cover;
+            opacity: 0.6;
+            z-index: 0;
+        }
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle, rgba(0,0,0,0.2) 0%, rgba(0,0,0,0.8) 100%);
+            z-index: 1;
+        }
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            color: white;
             text-align: center;
+            padding: 140px 1.5rem 100px 1.5rem; 
+        }
+
+        .header-scrolled {
+            background-color: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        .header-scrolled .nav-link { color: #4b5563; }
+        .header-scrolled .brand-text { color: #1f2937; }
+
+        .logo-container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 4px;
+            border-radius: 8px;
+            transition: all 0.5s ease;
+        }
+        .header-scrolled .logo-container { background-color: transparent; padding: 0; }
+
+        .tab-button {
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            font-weight: 500;
+            transition: all 0.2s ease-in-out;
             cursor: pointer;
-            border: 2px solid transparent; /* Base border */
+            border: 2px solid transparent;
         }
         .tab-active {
             background: linear-gradient(90deg, #1E90FF, #00C49F);
             color: white;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
         }
         .tab-inactive {
-            background-color: #e9ecef; /* bg-gray-200 */
-            color: #495057; /* text-gray-700 */
-            border: 2px solid #dee2e6; /* border-gray-300 */
+            background-color: #e9ecef;
+            color: #495057;
+            border: 2px solid #dee2e6;
         }
-        .tab-inactive:hover {
-            background-color: #ced4da; /* bg-gray-300 */
-            border-color: #adb5bd; 
-        }
-        .disclaimer-box {
-            background-color: #FFF3CD;
-            border-left: 5px solid #FFC107;
-            color: #664d03;
-        }
+        .tab-inactive:hover { background-color: #ced4da; border-color: #adb5bd; }
+
         .section-fade-in {
             opacity: 0;
             transform: translateY(20px);
             transition: opacity 0.6s ease-out, transform 0.6s ease-out;
         }
-        .section-fade-in.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
+        .section-fade-in.visible { opacity: 1; transform: translateY(0); }
+        
         .program-card {
             background-color: white;
             border-radius: 1rem;
-            padding: 2rem;
+            padding: 2.5rem;
             box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -2px rgba(0,0,0,0.05);
             border: 1px solid #e5e7eb;
         }
-        .limited-offer-banner {
-            background-color: #E6FFFA; 
-            border: 2px solid #00C49F; 
-            color: #234E52; 
-            padding: 0.75rem 1rem;
-            border-radius: 0.5rem;
-            margin-bottom: 1.5rem; 
-            text-align: center;
-            font-weight: 600; 
-        }
-        .promo-terms-box {
-            margin-top: 1.5rem; 
-            padding: 0.75rem; 
-            background-color: #f9fafb; 
-            border: 1px solid #e5e7eb; 
-            border-radius: 0.375rem; 
-            font-size: 0.75rem; 
-            color: #4b5563; 
-        }
-        /* Modal Styles */
+
+        /* Modal Architecture */
         .modal-overlay {
             position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background-color: rgba(0, 0, 0, 0.6);
+            top: 0; left: 0; right: 0; bottom: 0;
+            background-color: rgba(0, 0, 0, 0.85);
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             justify-content: center;
             z-index: 1000;
             opacity: 0;
             visibility: hidden;
             transition: opacity 0.3s ease, visibility 0.3s ease;
-            padding: 1rem;
+            overflow-y: auto;
+            padding: 2rem 1rem;
         }
-        .modal-overlay.active {
-            opacity: 1;
-            visibility: visible;
-        }
+        .modal-overlay.active { opacity: 1; visibility: visible; }
         .modal-content {
             background-color: white;
-            padding: 1.5rem;
-            border-radius: 0.5rem;
-            box-shadow: 0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04);
+            padding: 2.5rem;
+            border-radius: 0.75rem;
+            box-shadow: 0 25px 50px -12px rgba(0,0,0,0.5);
             width: 100%;
-            max-width: 600px;
-            max-height: 90vh;
-            display: flex;
-            flex-direction: column;
+            max-width: 800px;
             position: relative;
-        }
-        .modal-disclaimer-text {
-            max-height: 150px;
-            overflow-y: auto;
-            background-color: #f9fafb; 
-            border: 1px solid #e5e7eb; 
-            padding: 0.75rem;
-            border-radius: 0.375rem; 
-            font-size: 0.875rem; 
-            color: #374151; 
-            margin-bottom: 1rem; 
+            margin: auto;
         }
         .modal-close-button {
             position: absolute;
-            top: 0.75rem;
-            right: 0.75rem;
-            background: none;
+            top: 1rem; right: 1rem;
+            background: #f3f4f6;
             border: none;
             font-size: 1.5rem;
-            line-height: 1;
-            color: #9ca3af;
+            width: 40px; height: 40px;
+            border-radius: 50%;
+            color: #6b7280;
             cursor: pointer;
+            z-index: 1010;
+            display: flex; align-items: center; justify-content: center;
         }
-        .modal-close-button:hover {
-            color: #374151;
-        }
-        .oto-highlight {
-            color: #00C49F;
-            font-weight: 700;
-        }
-        #calendlyModal .modal-content {
-            max-width: 900px;
-            width: 95%;
-            height: 85vh;
-            padding: 1rem;
-        }
-        #calendlyFrame {
+
+        .legal-content h2 { font-weight: 800; font-size: 1.75rem; margin-top: 1.5rem; margin-bottom: 1rem; color: #111827; }
+        .legal-content p { margin-bottom: 1.25rem; color: #4b5563; line-height: 1.7; font-size: 1rem; }
+
+        .engagement-input {
             width: 100%;
-            height: 100%;
-            border: none;
+            padding: 1.25rem;
+            border: 2px solid #e5e7eb;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-family: monospace;
+            letter-spacing: 0.05em;
         }
+        .engagement-input:focus { border-color: #1E90FF; outline: none; box-shadow: 0 0 0 4px rgba(30, 144, 255, 0.1); }
+        .engagement-input.input-error { border-color: #ef4444; background-color: #fef2f2; }
+        .engagement-input:disabled { background-color: #f3f4f6; cursor: not-allowed; opacity: 0.7; }
+
+        .text-shadow { text-shadow: 0 2px 4px rgba(0,0,0,0.3); }
+        
+        /* Red Striked Circle feedback */
+        .cursor-locked { cursor: not-allowed !important; }
     </style>
 
-    <!-- Schema.org Structured Data -->
+    <!-- Schema.org Comprehensive Structured Data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Organization",
       "name": "E-Prosper Academy™",
-      "url": "https://www.eprosper.academy",
+      "url": "https://eprosper-academy.vercel.app",
       "logo": "https://cdn.abacus.ai/images/5cef3838-8f06-440f-ba73-723c798abb8a.png",
-      "description": "Unlock 37+ years of real-world wisdom with E-Prosper Academy™. Master Online AI Digital Success, Real Estate Investing (Flipping & Advanced), and Asset Protection Trusts.",
+      "description": "Elite financial wisdom academy specializing in Online AI Success, Real Estate Mastery, and Private Trust Asset Protection.",
       "founder": {
         "@type": "Person",
-        "name": "The Founder & Mentor of E-Prosper Academy™", 
-        "description": "Guiding individuals to financial prosperity with over 37 years of hands-on experience in digital business, real estate, and asset protection.",
-        "knowsAbout": ["Online AI Digital Success", "Real Estate Investing", "House Flipping", "Advanced Real Estate Strategies", "Asset Protection", "Trusts", "Financial Education", "Business Coaching"]
-      },
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "Customer Service / Enrollment Inquiry",
-        "email": "youremail@example.com" 
-      },
-      "potentialAction": {
-        "@type": "ReserveAction",
-        "target": {
-          "@type": "EntryPoint",
-          "urlTemplate": "https://www.eprosper.academy/#programs",
-          "actionPlatform": [
-            "http://schema.org/DesktopWebPlatform",
-            "http://schema.org/IOSPlatform",
-            "http://schema.org/AndroidPlatform"
-          ]
-        },
-        "name": "Enroll in a Program"
+        "name": "E-Prosper Academy™ Mentor",
+        "description": "Over 37 years of experience in real estate and digital business wealth creation."
       }
     }
     </script>
@@ -231,692 +237,439 @@
     {
       "@context": "https://schema.org",
       "@type": "Course",
-      "name": "E-Prosper Academy™ Online & AI Success",
-      "description": "This comprehensive program is your all-in-one toolkit to create multiple streams of income online. Learn step-by-step digital marketing, automation, and how to leverage AI for business growth and sustainable success. Includes ready-to-implement strategies and insights from real-world wins.",
-      "provider": {
-        "@type": "Organization",
-        "name": "E-Prosper Academy™",
-        "sameAs": "https://www.eprosper.academy"
-      },
-      "offers": {
-        "@type": "Offer",
-        "price": "497",
-        "priceCurrency": "USD",
-        "category": "Digital Marketing Course",
-        "availability": "https://schema.org/InStock",
-        "url": "https://www.eprosper.academy/#ai"
-      }
+      "name": "Online & AI Success Toolkit",
+      "description": "Master digital marketing and automation using advanced AI tools for sustainable income streams.",
+      "provider": { "@type": "Organization", "name": "E-Prosper Academy™" },
+      "offers": { "@type": "Offer", "price": "497", "priceCurrency": "USD" }
     }
     </script>
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Course",
-      "name": "E-Prosper Academy™ Real Estate Mastery: The Fast-Track Flipper's Blueprint",
-      "description": "Ready to make quick, intelligent moves in house flipping? This intensive program, delivered in actionable written modules, equips you with the 2025 strategies to find, fund, fix, and flip properties for substantial profit.",
-      "provider": {
-        "@type": "Organization",
-        "name": "E-Prosper Academy™",
-        "sameAs": "https://www.eprosper.academy"
-      },
-      "offers": {
-        "@type": "Offer",
-        "price": "997",
-        "priceCurrency": "USD",
-        "category": "Real Estate Investing Course",
-        "availability": "https://schema.org/InStock",
-        "url": "https://www.eprosper.academy/#re"
-      }
-    }
-    </script>
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Course",
-      "name": "E-Prosper Academy™ Advanced Investment Strategies",
-      "description": "For seasoned investors ready to operate at the highest level. This advanced real estate investment program builds significantly upon foundational knowledge, focusing on complex deal-making, portfolio scaling, and sophisticated financial architecture.",
-      "provider": {
-        "@type": "Organization",
-        "name": "E-Prosper Academy™",
-        "sameAs": "https://www.eprosper.academy"
-      },
-      "offers": {
-        "@type": "Offer",
-        "price": "1997",
-        "priceCurrency": "USD",
-        "category": "Advanced Investment Course",
-        "availability": "https://schema.org/InStock",
-        "url": "https://www.eprosper.academy/#adv-re"
-      }
-    }
-    </script>
-     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Service",
-      "serviceType": "Financial Education",
-      "provider": {
-        "@type": "Organization",
-        "name": "E-Prosper Academy™"
-      },
-      "name": "E-Prosper Academy™ Asset Protection & Trusts",
-      "description": "Learn how to safeguard your hard-earned assets with strategic wealth protection. This educational program demystifies trusts and other asset protection strategies, showing you how to build a fortress around your wealth. (Educational content only, not legal advice).",
-      "url": "https://www.eprosper.academy/#trusts",
-      "isRelatedTo": [
-        {
-          "@type": "Product",
-          "name": "E-Prosper Academy™ Online & AI Success"
-        },
-        {
-          "@type": "Product",
-          "name": "E-Prosper Academy™ Real Estate Mastery: The Fast-Track Flipper's Blueprint"
-        },
-        {
-          "@type": "Product",
-          "name": "E-Prosper Academy™ Advanced Investment Strategies"
-        }
-      ]
+      "name": "Real Estate Fast-Track Blueprint",
+      "description": "2025 strategies for house flipping, creative financing, and renovation management.",
+      "provider": { "@type": "Organization", "name": "E-Prosper Academy™" },
+      "offers": { "@type": "Offer", "price": "997", "priceCurrency": "USD" }
     }
     </script>
 </head>
 <body class="antialiased">
-    <header id="header" class="bg-white/80 backdrop-blur-lg fixed top-0 left-0 right-0 z-50 transition-all duration-300 shadow-sm">
+
+    <header id="header" class="fixed top-0 left-0 right-0 z-50 transition-all duration-500 bg-transparent py-4">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-20">
+            <div class="flex items-center justify-between h-16">
                 <div class="flex items-center">
-                    <a href="#hero" aria-label="E-Prosper Academy Home">
-                        <img src="https://cdn.abacus.ai/images/5cef3838-8f06-440f-ba73-723c798abb8a.png" alt="E-Prosper Academy™ Logo - Your Path to Financial Wisdom" class="h-10 sm:h-12 w-auto">
+                    <a href="#hero" class="flex items-center group" aria-label="Home">
+                        <div class="logo-container">
+                            <img src="https://cdn.abacus.ai/images/5cef3838-8f06-440f-ba73-723c798abb8a.png" alt="E-Prosper Academy™ Logo" class="h-10 sm:h-12 w-auto block">
+                        </div>
+                        <span class="ml-4 font-bold text-xl sm:text-2xl brand-text text-white transition-colors duration-500 tracking-tight text-shadow">E-Prosper Academy™</span>
                     </a>
-                    <span class="ml-3 font-bold text-xl sm:text-2xl text-gray-800 hidden sm:inline">E-Prosper Academy™</span>
                 </div>
-                <nav class="hidden md:flex items-center space-x-8" aria-label="Main Navigation">
-                    <a href="#hero" class="text-gray-600 hover:text-blue-500 font-medium">Home</a>
-                    <a href="#about" class="text-gray-600 hover:text-blue-500 font-medium">About</a>
-                    <a href="#programs" class="text-gray-600 hover:text-blue-500 font-medium nav-link-programs" data-target-tab="ai">Our Programs</a>
-                    <a href="#community" class="text-gray-600 hover:text-blue-500 font-medium">Community</a>
-                    <a href="#programs" class="enroll-button-nav px-6 py-2 text-white font-semibold rounded-lg gradient-bg hover:opacity-90 transition-opacity" data-target-tab="ai">Enroll Now</a>
+                <nav class="hidden md:flex items-center space-x-8">
+                    <a href="#hero" class="nav-link text-white hover:text-blue-400 font-medium transition-colors duration-500">Home</a>
+                    <a href="#about" class="nav-link text-white hover:text-blue-400 font-medium transition-colors duration-500">Academy Philosophy</a>
+                    <!-- COMMUNITY LEFT OF OUR PROGRAMS -->
+                    <a href="#community" class="nav-link text-white hover:text-blue-400 font-medium transition-colors duration-500">Community</a>
+                    <a href="#programs" class="nav-link text-white hover:text-blue-400 font-medium transition-colors duration-500">Our Programs</a>
+                    <a href="#programs" class="px-6 py-2 text-white font-bold rounded-lg gradient-bg hover:scale-105 transition-transform shadow-lg text-shadow">CLAIM ACCESS</a>
                 </nav>
-                <div class="md:hidden">
-                    <button id="mobile-menu-button" class="text-gray-800" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-4 6h4"></path></svg>
-                    </button>
-                </div>
             </div>
-        </div>
-        <div id="mobile-menu" class="hidden md:hidden">
-            <a href="#hero" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100">Home</a>
-            <a href="#about" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100">About</a>
-            <a href="#programs" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100 nav-link-programs" data-target-tab="ai">Our Programs</a>
-            <a href="#community" class="block py-2 px-4 text-sm text-gray-700 hover:bg-gray-100">Community</a>
-            <a href="#programs" class="enroll-button-nav block py-2 px-4 text-sm text-white gradient-bg" data-target-tab="ai">Enroll Now</a>
         </div>
     </header>
 
     <main>
-        <section id="hero" class="pt-32 pb-20 bg-white" aria-labelledby="hero-heading">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                <h1 id="hero-heading" class="text-4xl md:text-6xl font-extrabold text-gray-900 leading-tight">
-                    Unlock Decades of Wisdom for <span class="gradient-text">Modern Financial Success</span>
+        <!-- HERO SECTION WITH CINEMATIC VIDEO FALLBACK -->
+        <section id="hero" class="hero-video-container">
+            <video autoplay muted loop playsinline class="hero-video">
+                <source src="https://assets.mixkit.co/videos/preview/kit-city-traffic-at-night-from-above-4433-large.mp4" type="video/mp4" onerror="this.parentElement.style.backgroundImage='url(https://images.unsplash.com/photo-1449824913935-59a10b8d2000?auto=format&fit=crop&w=1920&q=80)'">
+            </video>
+            <div class="hero-overlay"></div>
+            <div class="hero-content max-w-5xl">
+                <h1 class="text-6xl md:text-8xl font-black leading-tight tracking-tighter mb-8 uppercase drop-shadow-2xl">
+                    STOP GUESSING. <br>
+                    <span class="gradient-text">BUILD A FORTRESS.</span>
                 </h1>
-                <p class="mt-6 max-w-3xl mx-auto text-lg md:text-xl text-gray-600">
-                    Tap into 37+ years of real-world experience with E-Prosper Academy™. Our specialized programs cover Online AI Digital Success, Real Estate Investing, and Asset Protection Trusts. This isn't just theory; it's actionable "hard knock life" knowledge.
+                <p class="mt-6 text-xl md:text-3xl font-light text-gray-100 max-w-3xl mx-auto leading-relaxed opacity-90 drop-shadow-md text-shadow">
+                    Acquire over 37 years of elite wisdom. From high-velocity Real Estate to AI-driven wealth, master the strategies used to secure and expand empires.
                 </p>
-                <div class="mt-10">
-                    <a href="#programs" class="enroll-button-main inline-block px-8 py-3 text-lg text-white font-bold rounded-lg gradient-bg hover:opacity-90 transition-opacity shadow-lg" data-target-tab="ai">
-                        Explore Our Programs
+                <div class="mt-14 flex flex-col sm:flex-row items-center justify-center gap-6">
+                    <a href="#programs" class="cta-button-powerful px-14 py-6 text-2xl text-white font-black rounded-none gradient-bg shadow-2xl tracking-widest">
+                        SECURE YOUR LEGACY NOW
                     </a>
                 </div>
+                <p class="mt-8 text-sm font-bold tracking-[0.4em] text-white/60 uppercase">Elite Intelligence • Timeless Sovereignty • Hard-Won Experience</p>
             </div>
         </section>
 
-        <section id="about" class="py-20 section-fade-in" aria-labelledby="about-heading">
+        <section id="about" class="py-20 section-fade-in bg-white">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center">
-                    <h2 id="about-heading" class="text-3xl font-bold text-gray-900">My Journey to Mentorship</h2>
-                    <p class="mt-4 max-w-2xl mx-auto text-lg text-gray-600">
-                        After more than three and a half decades of navigating markets, building businesses, and protecting assets, I realized my greatest asset is the knowledge I've gained. Pondering what good this hard-won wisdom served if kept only to myself, the vision for E-Prosper Academy™ emerged – my dedicated way of sharing that wealth of experience with a select group of driven individuals through focused, high-impact programs on AI, real estate, and asset protection.
-                    </p>
-                </div>
-                <div class="mt-12 bg-white p-8 rounded-2xl shadow-xl flex flex-col md:flex-row items-center gap-8 border border-gray-200">
-                     <div class="text-center md:text-left">
-                        <h3 class="text-2xl font-bold text-gray-800">Your Guide and Mentor in Financial Strategy</h3>
-                        <p class="mt-2 text-gray-600">
-                            I've seen booms and busts, fads and fundamentals. Frankly, the idea of becoming another "guru" never appealed to me, which is why I hesitated for so long to create something like this. For years, a mentor's direct, almost jarring question echoed in my mind: <strong>'What good will all this amazing knowledge you've spent years learning do the world, or your loved ones, if you take it to the grave?'</strong> That pivotal question ultimately solidified my goal: to genuinely cut through the noise and provide you with timeless principles and cutting-edge strategies that work in the real world. At E-Prosper Academy™, we'll explore complex topics like AI in business, real estate flipping, advanced investment, and trust strategies together in a supportive, no-hype educational environment, focusing purely on practical application and insightful discussion within each specialized program.
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                    <div>
+                        <h2 class="text-4xl font-extrabold text-gray-900 leading-tight">The Vision of Mentorship</h2>
+                        <p class="mt-6 text-lg text-gray-600 leading-relaxed">
+                            Following more than three and a half decades of navigating markets and securing assets, it became clear that the most significant resource available is the depth of knowledge acquired through experience. The founding of E-Prosper Academy™ was driven by a single question: <strong>'What value does knowledge hold if it is not shared with the world?'</strong> This academy was established to deliver timeless principles and cutting-edge strategies that produce results in the real world.
                         </p>
-                     </div>
-                     <div class="flex-shrink-0 text-center">
+                    </div>
+                    <div class="bg-gray-50 p-12 rounded-3xl border border-gray-100 text-center shadow-xl">
                         <div class="bg-blue-100 rounded-full w-40 h-40 flex items-center justify-center mx-auto shadow-inner">
-                           <span class="text-5xl font-bold gradient-text">37+</span>
+                           <span class="text-6xl font-bold gradient-text">37+</span>
                         </div>
-                        <p class="mt-2 text-lg font-semibold text-gray-700">Years of Real-World Experience</p>
-                     </div>
+                        <h3 class="text-2xl font-bold text-gray-800">Years of Foundation</h3>
+                        <p class="text-gray-500 mt-2 font-medium">Real-World Wins. Practical Curriculum.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="programs" class="py-20 bg-white section-fade-in" aria-labelledby="programs-heading">
+        <section id="programs" class="py-20 bg-gray-50 section-fade-in">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center">
-                    <h2 id="programs-heading" class="text-3xl font-bold text-gray-900">Our Signature E-Prosper Academy™ Programs</h2>
-                    <p class="mt-4 max-w-2xl mx-auto text-lg text-gray-600">
-                        Each program from E-Prosper Academy™ is a deep dive into a critical area for building wealth and security, packed with actionable strategies from decades of experience. Click on a program name below to explore its details and enrollment options.
-                    </p>
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-extrabold text-gray-900 uppercase tracking-tight">Academy Signature Systems</h2>
+                    <p class="mt-4 text-xl text-gray-600">Choose a path toward sustained prosperity.</p>
                 </div>
 
-                <div class="mt-12 max-w-4xl mx-auto">
-                    <nav class="flex flex-wrap justify-center gap-2 sm:gap-4 mb-8" aria-label="Program Tabs">
-                        <button class="tab-button tab-active" data-tab="ai" id="ai-tab-button" aria-controls="ai" role="tab" aria-selected="true">
-                            🤖 Online & AI Success
-                        </button>
-                        <button class="tab-button tab-inactive" data-tab="re" id="re-tab-button" aria-controls="re" role="tab" aria-selected="false">
-                            🏠 Real Estate Mastery
-                        </button>
-                        <button class="tab-button tab-inactive" data-tab="adv-re" id="adv-re-tab-button" aria-controls="adv-re" role="tab" aria-selected="false">
-                            📈 Advanced Investment
-                        </button>
-                        <button class="tab-button tab-inactive" data-tab="trusts" id="trusts-tab-button" aria-controls="trusts" role="tab" aria-selected="false">
-                            🛡️ Asset Protection
-                        </button>
+                <div class="max-w-5xl mx-auto">
+                    <nav class="flex flex-wrap justify-center gap-4 mb-12">
+                        <button class="tab-button tab-active" data-tab="ai">🤖 Online & AI Success</button>
+                        <button class="tab-button tab-inactive" data-tab="re">🏠 Real Estate Mastery</button>
+                        <button class="tab-button tab-inactive" data-tab="trusts">🛡️ Asset Protection</button>
                     </nav>
 
-                    <div class="mt-0"> 
-                        <div id="ai" class="tab-content program-card" role="tabpanel" aria-labelledby="ai-tab-button">
-                            <h3 class="text-2xl font-bold text-gray-800 mb-3">E-Prosper Academy™ Online & AI Success</h3>
-                            <p class="text-gray-600 mb-4">This comprehensive program is your all-in-one toolkit to create multiple streams of income online. Learn step-by-step digital marketing, automation, and how to leverage AI for business growth and sustainable success. Includes ready-to-implement strategies and insights from real-world wins.</p>
-                            <ul class="list-disc list-inside text-gray-600 mb-6 space-y-1">
-                                <li>Mastering digital marketing fundamentals for online income.</li>
-                                <li>Building automated sales systems for passive revenue.</li>
-                                <li>Leveraging AI tools for content creation and business growth.</li>
-                                <li>Developing and launching profitable digital products.</li>
-                                <li>Strategies for creating multiple online income streams.</li>
-                            </ul>
-                            <p class="text-3xl font-bold gradient-text mb-6 program-price" data-price="497">$497 <span class="text-lg text-gray-500 font-medium">One-Time Enrollment</span></p>
-                            <button class="enroll-button inline-block w-full sm:w-auto px-10 py-3 text-lg text-white font-bold rounded-lg gradient-bg hover:opacity-90 transition-opacity shadow-md" data-program-name="E-Prosper Academy™ Online & AI Success" data-program-price="$497 One-Time Enrollment" data-numeric-price="497" data-program-id="ai">
-                                Enroll in Online & AI Success - $497
-                            </button>
-                        </div>
-                        <div id="re" class="tab-content program-card hidden" role="tabpanel" aria-labelledby="re-tab-button">
-                           <h3 class="text-2xl font-bold text-gray-800 mb-3">E-Prosper Academy™ Real Estate Mastery: The Fast-Track Flipper's Blueprint</h3>
-                           <p class="text-gray-600 mb-4">Ready to make quick, intelligent moves in house flipping? This intensive program, delivered in actionable written modules, equips you with the 2025 strategies to find, fund, fix, and flip properties for substantial profit. Learn the "hard knock life" lessons for real estate investing without the costly mistakes.</p>
-                             <ul class="list-disc list-inside text-gray-600 mb-6 space-y-1">
-                                <li>Pinpointing Undervalued Properties with Digital Precision (2025 Techniques)</li>
-                                <li>Rapid Deal Analysis & 'Offer Intelligence' for Quick Wins in Flipping</li>
-                                <li>Smart Renovation Strategies: Max Profit, Minimum Time & Spend</li>
-                                <li>Funding Your Flips: Fast Cash & Creative Financing in Today's Market</li>
-                                <li>The Velocity Selling System™: Market, Stage, & Sell Houses in Record Time</li>
-                                <li>Risk Control: Protecting Your Capital on Every Real Estate Flip</li>
-                            </ul>
-                           <p class="text-3xl font-bold gradient-text mb-6 program-price" data-price="997">$997 <span class="text-lg text-gray-500 font-medium">One-Time Enrollment</span></p>
-                           <button class="enroll-button inline-block w-full sm:w-auto px-10 py-3 text-lg text-white font-bold rounded-lg gradient-bg hover:opacity-90 transition-opacity shadow-md" data-program-name="E-Prosper Academy™ Real Estate Mastery" data-program-price="$997 One-Time Enrollment" data-numeric-price="997" data-program-id="re">
-                                Enroll in Real Estate Mastery - $997
-                            </button>
-                        </div>
-                        <div id="adv-re" class="tab-content program-card hidden" role="tabpanel" aria-labelledby="adv-re-tab-button">
-                           <h3 class="text-2xl font-bold text-gray-800 mb-3">E-Prosper Academy™ Advanced Investment Strategies</h3>
-                           <div class="limited-offer-banner">
-                                🎁 LIMITED TIME OFFER (ENDS SOON!): Enroll now and receive the E-Prosper Academy™ Real Estate Mastery program ($997 value) absolutely FREE!
-                           </div>
-                           <p class="text-gray-600 mb-4">For seasoned investors ready to operate at the highest level. This advanced real estate investment program builds significantly upon foundational knowledge, focusing on complex deal-making, portfolio scaling, and sophisticated financial architecture not covered in introductory courses. Dive deep into strategies like syndication, commercial real estate, and large-scale portfolio management. This is where true financial architects are forged.</p>
-                            <ul class="list-disc list-inside text-gray-600 mb-6 space-y-1">
-                                <li>Mastering Real Estate Syndication & Capital Raising for Large Deals</li>
-                                <li>Advanced Risk Mitigation & Institutional-Grade Due Diligence</li>
-                                <li>Unlocking Hidden Value in Commercial Real Estate Ventures</li>
-                                <li>Creative Deal Structuring & High-Stakes Negotiation in Investment</li>
-                                <li>Sophisticated Tax Strategies for Real Estate Investors</li>
-                                <li>Building & Managing Scalable, Diversified Investment Portfolios</li>
-                            </ul>
-                           <p class="text-3xl font-bold gradient-text mb-6 program-price" data-price="1997">$1997 <span class="text-lg text-gray-500 font-medium">One-Time Enrollment</span></p>
-                            <div class="promo-terms-box">
-                                <h4 class="font-semibold text-gray-700 mb-1">Promotional Offer Terms:</h4>
-                                <p>The bundled E-Prosper Academy™ Real Estate Mastery program is a special bonus for new purchases of Advanced Investment Strategies made during this promotional period only. This offer cannot be retroactively applied to previous purchases of any individual program, and no partial refunds or credits will be issued for past enrollments should this or similar promotions be offered.</p>
-                            </div>
-                           <button class="enroll-button mt-6 inline-block w-full sm:w-auto px-10 py-3 text-lg text-white font-bold rounded-lg gradient-bg hover:opacity-90 transition-opacity shadow-md" data-program-name="E-Prosper Academy™ Advanced Investment Strategies" data-program-price="$1997 One-Time Enrollment (Includes Real Estate Mastery Bonus)" data-numeric-price="1997" data-program-id="adv-re">
-                                Enroll for $1997 (Bonus: Real Estate Mastery Included!)
-                            </button>
-                        </div>
-                        <div id="trusts" class="tab-content program-card hidden" role="tabpanel" aria-labelledby="trusts-tab-button">
-                            <h3 class="text-2xl font-bold text-gray-800 mb-3">E-Prosper Academy™ Asset Protection & Trusts</h3>
-                           <p class="text-gray-600 mb-4">Learn how to safeguard your hard-earned assets with strategic wealth protection. This educational program demystifies trusts and other asset protection strategies, showing you how to build a fortress around your wealth. (Educational content only, not legal advice).</p>
-                            <ul class="list-disc list-inside text-gray-600 mb-6 space-y-1">
-                                <li>Understanding different types of trusts for asset protection.</li>
-                                <li>Strategies for domestic and offshore asset protection.</li>
-                                <li>Integrating asset protection with estate planning and wealth management.</li>
-                                <li>Common pitfalls in asset protection and how to avoid them.</li>
-                            </ul>
-                           <p class="text-3xl font-bold gradient-text mb-6">Price: Enquire Within</p>
-                           <button id="scheduleConsultationBtn" class="inline-block w-full sm:w-auto px-10 py-3 text-lg text-white font-bold rounded-lg bg-blue-600 hover:bg-blue-700 transition-opacity shadow-md">
-                                Schedule a Free Consultation
-                            </button>
+                    <div id="ai" class="tab-content program-card">
+                        <h3 class="text-3xl font-bold text-gray-800 mb-4 uppercase tracking-tight">Online & AI Success Toolkit</h3>
+                        <p class="text-gray-600 mb-8 text-lg leading-relaxed">Master digital marketing and automation to establish scalable income streams utilizing the latest advancements in AI.</p>
+                        <button class="enroll-button cta-button-powerful px-10 py-5 text-xl text-white font-black rounded-lg gradient-bg shadow-lg" data-program="Online & AI Success" data-donation="497">CLAIM SEAT - $497 DONATION</button>
+                    </div>
+
+                    <div id="re" class="tab-content program-card hidden">
+                        <h3 class="text-3xl font-bold text-gray-800 mb-4 uppercase tracking-tight">Real Estate Fast-Track Blueprint</h3>
+                        <p class="text-gray-600 mb-8 text-lg leading-relaxed">Acquire the strategies needed to identify, fund, and renovate properties for maximum profitability in the current market.</p>
+                        <button class="enroll-button cta-button-powerful px-10 py-5 text-xl text-white font-black rounded-lg gradient-bg shadow-lg" data-program="Real Estate Mastery" data-donation="997">CLAIM ACCESS - $997 DONATION</button>
+                    </div>
+
+                    <div id="trusts" class="tab-content program-card hidden">
+                        <h3 class="text-3xl font-bold text-gray-800 mb-6 text-center underline decoration-blue-500 uppercase tracking-tight">Discovery Consultation & Private Trusts</h3>
+                        <p class="text-center text-gray-600 mb-8 max-w-2xl mx-auto text-lg leading-relaxed">
+                            Engage in a private discovery session to analyze your current standing and map out growth paths using elite architectural foundations. 
+                            This 60-minute engagement is designed to evaluate individual circumstances for high-level asset preservation strategies.
+                        </p>
+                        <div class="flex justify-center">
+                            <button class="enroll-button cta-button-powerful px-12 py-6 text-xl text-white font-black rounded-lg gradient-bg shadow-xl" data-program="Discovery Consultation Engagement" data-donation="500">INITIATE DISCOVERY ENGAGEMENT - $500 DONATION</button>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="community" class="py-20 section-fade-in" aria-labelledby="community-heading">
-            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="text-center">
-                    <h2 id="community-heading" class="text-3xl font-bold text-gray-900">More Than Just Programs: An "Inner Circle" Community of Achievers</h2>
-                    <p class="mt-4 max-w-2xl mx-auto text-lg text-gray-600">
-                        Participation in the E-Prosper Academy™ Asset Protection Mastery program includes privileged access to our dynamic "Inner Circle" community. Admission to the Asset Protection Mastery program is selective and by invitation. Prospective candidates may request a phone consultation to discuss eligibility and program fit.
+        <section id="community" class="py-20 bg-white section-fade-in">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+                <div class="program-card bg-white max-w-4xl mx-auto mb-20 border-2 border-gray-100">
+                    <h2 class="text-4xl font-black text-gray-900 mb-6 uppercase tracking-tight">An "Inner Circle" of Achievers</h2>
+                    <p class="text-xl text-gray-600 leading-relaxed font-medium">
+                        Membership selection is criteria-based. The academy fosters a supportive environment built on timeless principles and direct mentorship to secure legacies.
                     </p>
                 </div>
-                <div class="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-                    <div class="bg-white p-8 rounded-2xl shadow-md border border-gray-100">
-                        <span class="text-4xl">🗓️</span>
-                        <h3 class="mt-4 text-xl font-semibold">Exclusive Content & Insights</h3>
-                        <p class="mt-2 text-gray-600">Access ongoing insights, Q&As, and discussions relevant to your chosen program and beyond, focusing on real-world application.</p>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                    <div class="bg-white p-10 border-t-8 border-blue-500 shadow-xl text-center">
+                        <span class="text-5xl block mb-6">🤝</span>
+                        <h3 class="text-2xl font-bold mb-4 uppercase">Peer Network</h3>
+                        <p class="text-gray-600">Connect with dedicated individuals sharing the same pursuit of prosperity.</p>
                     </div>
-                    <div class="bg-white p-8 rounded-2xl shadow-md border border-gray-100">
-                        <span class="text-4xl">🤝</span>
-                        <h3 class="mt-4 text-xl font-semibold">Peer Networking & Support</h3>
-                        <p class="mt-2 text-gray-600">Connect with fellow students, share experiences, and build valuable relationships within a supportive financial learning community.</p>
+                    <div class="bg-white p-10 border-t-8 border-teal-500 shadow-xl text-center">
+                        <span class="text-5xl block mb-6">💡</span>
+                        <h3 class="text-2xl font-bold mb-4 uppercase">Strategic Guidance</h3>
+                        <p class="text-gray-600">Receive insights derived from over three decades of professional achievements.</p>
                     </div>
-                    <div class="bg-white p-8 rounded-2xl shadow-md border border-gray-100">
-                        <span class="text-4xl">💡</span>
-                        <h3 class="mt-4 text-xl font-semibold">Direct Mentorship Access</h3>
-                        <p class="mt-2 text-gray-600">Benefit from continued guidance and answers to your questions from an experienced mentor with 37+ years in the field.</p>
+                    <div class="bg-white p-10 border-t-8 border-indigo-500 shadow-xl text-center">
+                        <span class="text-5xl block mb-6">🗓️</span>
+                        <h3 class="text-2xl font-bold mb-4 uppercase">Live Analysis</h3>
+                        <p class="text-gray-600">Engage in regular discussions focused on real-world practical application.</p>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="disclaimer" class="py-20 section-fade-in" aria-labelledby="disclaimer-heading">
-            <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="disclaimer-box p-6 rounded-lg">
-                    <h3 id="disclaimer-heading" class="font-bold text-lg">Important Disclaimers & Enrollment Terms</h3>
-                    <p class="mt-2 text-sm">
-                        All content and discussions within the E-Prosper Academy™ programs and community are for **educational and informational purposes only**. 
-                        No legal, financial, or investment advice will ever be provided. We make no guarantees regarding success, income, or results. You should always consult with your own qualified and licensed professionals (attorneys, CPAs, financial advisors, etc.) for advice pertaining to your individual situation.
-                    </p>
-                    <p class="mt-2 text-sm">
-                        Promotional offers, including bundled programs or discounts, are valid only for new purchases made during the specified promotional period and are subject to the terms outlined at the time of offer. Such promotions cannot be retroactively applied to previous purchases, and no partial refunds or credits will be issued for past enrollments.
-                    </p>
-                    <p class="mt-4 font-bold text-sm">
-                        ALL PROGRAM ENROLLMENT SALES ARE FINAL. There will be NO REFUNDS at ANYTIME for any amounts paid. By enrolling, you acknowledge and agree to these terms.
-                    </p>
                 </div>
             </div>
         </section>
 
+        <!-- IMPORTANT DISCLAIMERS SECTION -->
+        <section id="disclaimer" class="py-20 bg-white section-fade-in border-t border-gray-100">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="bg-gray-50 border border-gray-200 p-8 rounded-xl shadow-sm text-center md:text-left">
+                    <h3 class="font-bold text-lg mb-3 text-gray-900 uppercase tracking-tight">Important Disclaimers & Enrollment Terms</h3>
+                    <div class="text-xs text-gray-600 leading-relaxed space-y-3">
+                        <p>All content and discussions within E-Prosper Academy™ programs and communities are for **educational and informational purposes only**. No legal, financial, or investment advice is provided. The academy makes no guarantees regarding specific success or outcomes.</p>
+                        <p>Promotional engagement offers are valid only for new enrollments made during the specified period and cannot be retroactively applied.</p>
+                        <p class="font-black text-gray-800 border-t border-gray-200 pt-3">ALL PROGRAM ENROLLMENT DONATIONS ARE FINAL. THERE WILL BE NO REFUNDS AT ANYTIME FOR ANY AMOUNTS DONATED. BY ENROLLING, ENROLLEES ACKNOWLEDGE AND AGREE TO THESE TERMS.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
-    
-    <footer class="bg-gray-800 text-white">
-        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8 text-center">
-             <img src="https://cdn.abacus.ai/images/5cef3838-8f06-440f-ba73-723c798abb8a.png" alt="E-Prosper Academy™ - Official Logo" class="h-10 sm:h-12 w-auto mx-auto mb-4">
-            <p>&copy; 2025 E-Prosper Academy™ Trust. All Rights Reserved.</p>
-            <p class="text-sm text-gray-400 mt-2">Your Path to Online Prosperity and Financial Wisdom</p>
+
+    <footer class="bg-gray-900 text-white py-16 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 text-center">
+            <div class="bg-white p-2 rounded-xl inline-block mb-10 shadow-lg">
+                <img src="https://cdn.abacus.ai/images/5cef3838-8f06-440f-ba73-723c798abb8a.png" alt="E-Prosper Academy™ Logo - Official" class="h-16 w-auto">
+            </div>
+            <p class="text-gray-400">&copy; 2026 E-Prosper Academy™ Trust. All Rights Reserved.</p>
+            <!-- TAGLINE POSITIONED EXACTLY -->
+            <p class="text-sm text-gray-400 mt-2 mb-6 uppercase tracking-widest font-semibold">Your Path to Online Prosperity and Financial Wisdom</p>
+            <div class="flex flex-wrap justify-center gap-6 text-sm text-gray-500">
+                <button onclick="openLegalModal('privacy')" class="hover:text-white transition-colors">Privacy Policy</button>
+                <button onclick="openLegalModal('terms')" class="hover:text-white transition-colors">Terms of Enrollment</button>
+                <button onclick="openLegalModal('legal')" class="hover:text-white transition-colors">Disclaimer</button>
+            </div>
         </div>
     </footer>
 
-    <!-- OTO Upsell Modal -->
-    <div id="otoModal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="otoModalHeading">
+    <!-- STEP 1: CONFIRMATION MODAL -->
+    <div id="purchaseModal" class="modal-overlay">
         <div class="modal-content">
-            <button id="closeOtoModalButton" class="modal-close-button" aria-label="Close">&times;</button>
-            <h2 id="otoModalHeading" class="text-2xl md:text-3xl font-extrabold text-center text-gray-900 mb-3">WAIT! Your Order Is Almost Complete...</h2>
-            <p class="text-center text-yellow-500 font-semibold text-lg mb-4">🔥 Special Upgrade Offer! 🔥</p>
+            <button id="closePurchaseModal" class="modal-close-button" aria-label="Close">&times;</button>
+            <h2 id="confirmModalTitle" class="text-3xl font-black mb-6 text-gray-900 uppercase">Confirm Submission</h2>
+            <p id="modalProgramName" class="text-2xl font-bold gradient-text mb-2"></p>
+            <p id="modalPrice" class="text-gray-500 text-lg mb-8"></p>
             
-            <p class="text-gray-700 mb-4 text-center">
-                You're about to get the <span class="font-semibold">E-Prosper Academy™ Real Estate Mastery</span> program for $997.
-                <br>For a <span class="oto-highlight">LIMITED TIME</span>, upgrade to our premier <span class="font-semibold">E-Prosper Academy™ Advanced Investment Strategies</span> program for just <span class="oto-highlight">$1000 more</span> (total $1997)...
+            <div id="modalDescription" class="bg-yellow-50 p-6 border-l-4 border-yellow-400 text-sm mb-6 leading-relaxed text-gray-700"></div>
+
+            <div class="flex items-start mb-10">
+                <div class="flex items-center h-5">
+                    <input id="disclaimerCheckbox" type="checkbox" class="w-5 h-5 text-blue-600 border-gray-300 rounded focus:ring-blue-500 cursor-pointer">
+                </div>
+                <div class="ml-3 text-sm">
+                    <label for="disclaimerCheckbox" class="font-medium text-gray-900 cursor-pointer select-none leading-relaxed">
+                        I have read, understand, and agree to the E-Prosper Academy™ Important Disclaimers and Terms, including the strict <strong>NO REFUNDS</strong> policy on all donations.
+                    </label>
+                </div>
+            </div>
+
+            <button id="proceedBtn" class="w-full block text-center py-6 text-white text-2xl font-black rounded-lg gradient-bg shadow-xl opacity-50 cursor-locked transition-all uppercase tracking-widest">PROCEED TO CONTRIBUTION</button>
+        </div>
+    </div>
+
+    <!-- STEP 2: FINAL CONTRIBUTION MODAL -->
+    <div id="paymentModal" class="modal-overlay">
+        <div class="modal-content">
+            <button id="closePaymentModal" class="modal-close-button" aria-label="Close">&times;</button>
+            <h2 class="text-4xl font-black mb-4 text-gray-900 text-center uppercase tracking-tight">Finalize Your Commitment</h2>
+            
+            <div class="text-center mb-6">
+                <p id="finalProgramName" class="text-xl font-bold text-gray-900 mb-2"></p>
+                <p id="finalProgramPrice" class="text-3xl font-black gradient-text"></p>
+            </div>
+            
+            <!-- SECURE STEP 1: MUST CLICK GATEWAY -->
+            <div class="bg-blue-50 p-6 rounded-lg mb-8 border border-blue-100 text-center">
+                <p class="text-gray-800 font-bold mb-4 uppercase tracking-widest text-sm">Step 1: Open Secure Donation Gateway</p>
+                <a id="paypalFinalBtn" href="#" target="_blank" class="w-full block text-center py-5 text-white text-xl font-black rounded-lg bg-blue-600 shadow-lg hover:bg-blue-700 transition-colors uppercase">Open PayPal Gateway</a>
+            </div>
+
+            <!-- SECURE STEP 2: LOCKED UNTIL GATEWAY CLICKED -->
+            <div id="verificationSection" class="mb-8 opacity-40">
+                <p class="text-gray-800 font-bold mb-4 uppercase tracking-widest text-sm text-center">Step 2: Verify Contribution ID</p>
+                <div class="space-y-2">
+                    <input type="text" id="paypalTransactionId" placeholder="Transaction ID (e.g., 82X92842BZ153826K)" class="engagement-input cursor-locked" maxlength="17" disabled>
+                    <p id="idFormatHint" class="text-xs text-gray-400 font-medium px-1 italic text-center">Click the PayPal gateway above to enable verification entry.</p>
+                    
+                    <button id="verifyFinalBtn" class="cta-button-powerful w-full block text-center py-5 mt-4 text-white text-xl font-black rounded-lg gradient-bg shadow-2xl tracking-tighter opacity-50 cursor-locked uppercase">Verify & Finalize</button>
+                </div>
+            </div>
+            
+            <button id="cancelPaymentBtn" class="w-full text-gray-400 font-bold hover:text-gray-800 transition-colors uppercase tracking-[0.2em] text-xs">Cancel and Return</button>
+        </div>
+    </div>
+
+    <!-- CALENDAR (RESTRICTED TO CONSULTATION ONLY) -->
+    <div id="calendarModal" class="modal-overlay">
+        <div class="modal-content !max-w-4xl">
+            <button id="closeCalendarModal" class="modal-close-button" aria-label="Close">&times;</button>
+            <h2 class="text-3xl font-black mb-4 text-gray-900 text-center uppercase tracking-tight">Discovery Analysis Schedule</h2>
+            <p class="text-center text-gray-600 mb-6 font-semibold">Select your time slot for the professional Standing & Growth session.</p>
+            <div style="width:100%;height:600px;overflow-y:auto" id="discovery-cal-inline"></div>
+        </div>
+    </div>
+
+    <!-- SUCCESS MODAL (PILLAR PATH) -->
+    <div id="successModal" class="modal-overlay">
+        <div class="modal-content text-center">
+            <button id="closeSuccessModal" class="modal-close-button" aria-label="Close">&times;</button>
+            <div class="bg-green-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg class="w-10 h-10 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
+            </div>
+            <h2 class="text-3xl font-black text-gray-900 uppercase mb-4">Contribution Recorded</h2>
+            <p class="text-lg text-gray-700 mb-8 leading-relaxed">
+                Your non-refundable contribution and ID have been submitted for verification. 
+                Academy access credentials will be dispatched to your email within 24 hours.
             </p>
-            <p class="text-gray-700 mb-4 text-center text-lg font-semibold">
-                ...and we'll include the <span class="oto-highlight">Real Estate Mastery program ($997 value) absolutely FREE!</span>
-            </p>
-            <p class="text-gray-700 mb-1 text-sm">The Advanced Investment Strategies program takes you far beyond flipping, into areas like:</p>
-            <ul class="list-disc list-inside text-gray-600 mb-6 text-sm pl-4">
-                <li>Mastering Real Estate Syndication & Capital Raising</li>
-                <li>Advanced Risk Mitigation & Institutional-Grade Due Diligence</li>
-                <li>Building & Managing Scalable, Diversified Portfolios</li>
-            </ul>
-
-            <div class="mt-2 flex flex-col gap-3">
-                <button id="upgradeToAdvancedButton" class="w-full inline-flex justify-center rounded-lg border border-transparent shadow-sm px-6 py-3 gradient-bg text-base font-medium text-white hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500" 
-                        data-program-name="E-Prosper Academy™ Advanced Investment Strategies" 
-                        data-program-price="$1997 One-Time Enrollment (Includes Real Estate Mastery Bonus)"
-                        data-numeric-price="1997">
-                    YES! Upgrade Me to Advanced Investment for $1997 (Real Estate Mastery FREE!)
-                </button>
-                <button id="stickWithMasteryButton" type="button" class="w-full inline-flex justify-center rounded-lg border border-gray-300 shadow-sm px-6 py-3 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-                        data-program-name="E-Prosper Academy™ Real Estate Mastery" 
-                        data-program-price="$997 One-Time Enrollment"
-                        data-numeric-price="997">
-                    No thanks, I'll stick with Real Estate Mastery for $997
-                </button>
-            </div>
+            <button class="close-success-btn px-10 py-4 text-white font-bold rounded-lg gradient-bg shadow-lg uppercase">Return to Home</button>
         </div>
     </div>
 
-    <!-- Purchase Disclaimer Modal -->
-    <div id="purchaseModal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="purchaseModalHeading">
-        <div class="modal-content">
-             <button id="closePurchaseModalButton" class="modal-close-button" aria-label="Close">&times;</button>
-            <h2 id="purchaseModalHeading" class="text-2xl font-bold text-gray-900 mb-4">Confirm Your Enrollment</h2>
-            <p class="text-lg font-semibold text-gray-800 mb-1" id="modalProgramNameDisplay"></p>
-            <p class="text-xl gradient-text font-semibold mb-4" id="modalProgramPriceDisplay"></p>
-
-            <h3 class="text-md font-semibold text-gray-800 mb-2">Please Review Important Disclaimers:</h3>
-            <div class="modal-disclaimer-text">
-                <p>All content and discussions within the E-Prosper Academy™ programs and community are for **educational and informational purposes only**. No legal, financial, or investment advice will ever be provided. We make no guarantees regarding success, income, or results. You should always consult with your own qualified and licensed professionals (attorneys, CPAs, financial advisors, etc.) for advice pertaining to your individual situation.</p>
-                <p class="mt-2">Promotional offers, including bundled programs or discounts, are valid only for new purchases made during the specified promotional period and are subject to the terms outlined at the time of offer. Such promotions cannot be retroactively applied to previous purchases, and no partial refunds or credits will be issued for past enrollments.</p>
-                <p class="mt-2 font-bold">ALL PROGRAM ENROLLMENT SALES ARE FINAL. There will be NO REFUNDS at ANYTIME for any amounts paid. By enrolling, you acknowledge and agree to these terms.</p>
-            </div>
-
-            <div class="mt-4">
-                <label for="disclaimerAgreeCheckbox" class="flex items-center text-sm text-gray-700">
-                    <input type="checkbox" id="disclaimerAgreeCheckbox" class="mr-2 h-4 w-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500">
-                    I have read, understood, and agree to the E-Prosper Academy™ Important Disclaimers, including the policy that ALL PROGRAM ENROLLMENT SALES ARE FINAL and there will be NO REFUNDS.
-                </label>
-            </div>
-
-            <div class="mt-6 flex flex-col sm:flex-row-reverse gap-3">
-                <button id="proceedToPaymentButton" class="w-full sm:w-auto inline-flex justify-center rounded-lg border border-transparent shadow-sm px-6 py-2 gradient-bg text-base font-medium text-white hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 disabled:opacity-50 disabled:cursor-not-allowed" disabled>
-                    Confirm & Proceed
-                </button>
-                <button id="cancelModalButton" type="button" class="w-full sm:w-auto inline-flex justify-center rounded-lg border border-gray-300 shadow-sm px-6 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-                    Cancel
-                </button>
-            </div>
+    <div id="legalModal" class="modal-overlay">
+        <div class="modal-content legal-content">
+            <button id="closeLegalModal" class="modal-close-button" aria-label="Close">&times;</button>
+            <div id="legalModalBody"></div>
         </div>
     </div>
-
-    <!-- Payment Modal -->
-    <div id="paymentModal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="paymentModalHeading">
-        <div class="modal-content">
-            <button id="closePaymentModalButton" class="modal-close-button" aria-label="Close">&times;</button>
-            <h2 id="paymentModalHeading" class="text-2xl font-bold text-gray-900 mb-2 text-center">Complete Your Payment</h2>
-            <p class="text-gray-600 mb-1 text-sm text-center">You are enrolling in:</p>
-            <p class="text-lg font-semibold text-gray-800 mb-1 text-center" id="paymentModalProgramNameDisplay"></p> 
-            <p class="text-lg gradient-text font-bold mb-6 text-center" id="paymentModalProgramPriceDisplay"></p> 
-            
-            <p class="text-sm text-gray-700 mb-4 text-center">Click the button below to finalize your payment securely via PayPal.</p>
-            
-            <a id="goToPayPalButton" href="#" target="_blank" class="w-full inline-flex justify-center rounded-lg border border-transparent shadow-sm px-6 py-3 gradient-bg text-base font-medium text-white hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
-                Go to PayPal to Complete Payment
-            </a>
-            <button id="returnToSiteButton" type="button" class="mt-3 w-full inline-flex justify-center rounded-lg border border-gray-300 shadow-sm px-6 py-2 bg-white text-base font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
-                Close
-            </button>
-        </div>
-    </div>
-    
-    <!-- Calendly Modal -->
-    <div id="calendlyModal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="calendlyModalHeading">
-        <div class="modal-content">
-            <button id="closeCalendlyModalButton" class="modal-close-button" aria-label="Close">&times;</button>
-            <h2 id="calendlyModalHeading" class="text-xl font-semibold text-gray-800 mb-2 text-center">Schedule Your Free Consultation</h2>
-            <p class="text-xs text-gray-500 text-center mb-3">Please note: Due to recent changes in how Google handles calendar invites, you might not receive an email confirmation immediately, or it may go to your spam/junk folder. Please check there if you don't see it in your inbox.</p>
-            <div class="w-full h-[70vh]"> 
-                <iframe id="calendlyFrame" src="" style="width:100%; height:100%; border:0;" frameborder="0" title="Schedule a consultation with E-Prosper Academy"></iframe>
-            </div>
-        </div>
-    </div>
-
 
     <script>
+        const legalData = {
+            privacy: `<h2>Privacy Policy</h2><p>E-Prosper Academy™ is committed to protecting donor information. We do not store financial data on our servers.</p>`,
+            terms: `<h2>Terms of Enrollment</h2><p>ALL DONATIONS ARE FINAL. There will be NO REFUNDS at anytime for any amounts donated due to the immediate intellectual nature of the materials.</p>`,
+            legal: `<h2>Legal Disclaimer</h2><p>EDUCATIONAL PURPOSES ONLY. No legal, financial, or investment advice is provided.</p>`
+        };
+
+        function openLegalModal(type) {
+            const modal = document.getElementById('legalModal');
+            document.getElementById('legalModalBody').innerHTML = legalData[type];
+            modal.classList.add('active');
+            document.body.classList.add('modal-open');
+        }
+
         document.addEventListener('DOMContentLoaded', () => {
-            const mobileMenuButton = document.getElementById('mobile-menu-button');
-            const mobileMenu = document.getElementById('mobile-menu');
-            const header = document.getElementById('header'); 
-
-            // Store current program details for modals
-            let currentProgramName = '';
-            let currentProgramPriceString = '';
-            let currentNumericPrice = '';
-
-            mobileMenuButton.addEventListener('click', () => {
-                mobileMenu.classList.toggle('hidden');
-            });
-            
-            const mainEnrollButton = document.querySelector('.enroll-button-main');
-            const navLinks = document.querySelectorAll('header nav a[href^="#"], #mobile-menu a[href^="#"]'); 
-
+            const header = document.getElementById('header');
             const tabButtons = document.querySelectorAll('.tab-button');
             const tabContents = document.querySelectorAll('.tab-content');
-
-            function activateTab(tabId) {
-                tabButtons.forEach(btn => {
-                    btn.classList.remove('tab-active', 'tab-inactive'); 
-                    if (btn.dataset.tab === tabId) {
-                        btn.classList.add('tab-active');
-                        btn.setAttribute('aria-selected', 'true');
-                    } else {
-                        btn.classList.add('tab-inactive');
-                        btn.setAttribute('aria-selected', 'false');
-                    }
-                });
-                tabContents.forEach(content => {
-                    content.classList.toggle('hidden', content.id !== tabId);
-                });
-            }
+            const enrollButtons = document.querySelectorAll('.enroll-button');
             
-            function handleNavigationClick(event) {
-                const targetHash = this.getAttribute('href');
-                const targetElement = document.querySelector(targetHash);
-
-                if (targetElement) {
-                    event.preventDefault();
-                    let headerOffset = header.offsetHeight;
-                    let elementPosition = targetElement.offsetTop;
-                    let offsetPosition = elementPosition - headerOffset;
-                    
-                    window.scrollTo({ top: offsetPosition, behavior: 'smooth'});
-                    
-                    const targetTab = this.dataset.targetTab;
-                    if (targetTab && targetHash === '#programs') {
-                       activateTab(targetTab);
-                    }
-                }
-                if (!mobileMenu.classList.contains('hidden') && mobileMenu.contains(this)) {
-                    mobileMenu.classList.add('hidden');
-                }
-            }
+            const purchaseModal = document.getElementById('purchaseModal');
+            const paymentModal = document.getElementById('paymentModal');
+            const calendarModal = document.getElementById('calendarModal');
+            const successModal = document.getElementById('successModal');
+            const legalModal = document.getElementById('legalModal');
             
-            navLinks.forEach(anchor => {
-                 if (!anchor.classList.contains('enroll-button')) {
-                    anchor.addEventListener('click', handleNavigationClick);
-                }
-            });
-            if(mainEnrollButton) {
-                mainEnrollButton.addEventListener('click', handleNavigationClick);
-            }
+            const disclaimerCheckbox = document.getElementById('disclaimerCheckbox');
+            const proceedBtn = document.getElementById('proceedBtn');
+            const paypalFinalBtn = document.getElementById('paypalFinalBtn');
+            const transactionInput = document.getElementById('paypalTransactionId');
+            const verifyFinalBtn = document.getElementById('verifyFinalBtn');
+            const idFormatHint = document.getElementById('idFormatHint');
+            const verificationSection = document.getElementById('verificationSection');
+
+            let isPaypalClicked = false;
+            let currentProgram = '';
 
             window.addEventListener('scroll', () => {
-                if (window.scrollY > 50) {
-                    header.classList.add('shadow-md');
+                if (window.scrollY > 60) header.classList.add('header-scrolled');
+                else header.classList.remove('header-scrolled');
+            });
+
+            tabButtons.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    tabButtons.forEach(b => b.classList.replace('tab-active', 'tab-inactive'));
+                    btn.classList.replace('tab-inactive', 'tab-active');
+                    tabContents.forEach(c => c.classList.toggle('hidden', c.id !== btn.dataset.tab));
+                });
+            });
+
+            paypalFinalBtn.addEventListener('click', () => {
+                isPaypalClicked = true;
+                verificationSection.classList.remove('opacity-40');
+                transactionInput.disabled = false;
+                transactionInput.classList.remove('cursor-locked');
+                idFormatHint.classList.remove('italic');
+                idFormatHint.textContent = "Enter your real 17-character Transaction ID.";
+            });
+
+            disclaimerCheckbox.addEventListener('change', function() {
+                if (this.checked) {
+                    proceedBtn.classList.replace('opacity-50', 'opacity-100');
+                    proceedBtn.classList.remove('cursor-locked');
                 } else {
-                    header.classList.remove('shadow-md');
+                    proceedBtn.classList.replace('opacity-100', 'opacity-50');
+                    proceedBtn.classList.add('cursor-locked');
                 }
             });
 
-            tabButtons.forEach(button => {
-                button.addEventListener('click', () => {
-                    activateTab(button.dataset.tab);
-                });
-            });
-            activateTab('ai'); // Set initial active tab
-
-
-            const sections = document.querySelectorAll('.section-fade-in');
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('visible');
-                    }
-                });
-            }, { threshold: 0.1 });
-            sections.forEach(section => { observer.observe(section); });
-
-            // Modals
-            const purchaseModal = document.getElementById('purchaseModal');
-            const modalProgramNameEl = document.getElementById('modalProgramNameDisplay'); 
-            const modalProgramPriceEl = document.getElementById('modalProgramPriceDisplay'); 
-            const purchaseModalHeadingElement = document.getElementById('purchaseModalHeading'); 
-            const disclaimerAgreeCheckbox = document.getElementById('disclaimerAgreeCheckbox');
-            const proceedToPaymentButton = document.getElementById('proceedToPaymentButton');
-            const cancelModalButton = document.getElementById('cancelModalButton');
-            const closePurchaseModalButton = document.getElementById('closePurchaseModalButton');
-            
-            const otoModal = document.getElementById('otoModal');
-            const closeOtoModalButton = document.getElementById('closeOtoModalButton');
-            const upgradeToAdvancedButton = document.getElementById('upgradeToAdvancedButton');
-            const stickWithMasteryButton = document.getElementById('stickWithMasteryButton');
-
-            const paymentModal = document.getElementById('paymentModal');
-            const paymentModalProgramNameDisplay = document.getElementById('paymentModalProgramNameDisplay'); 
-            const paymentModalProgramPriceDisplay = document.getElementById('paymentModalProgramPriceDisplay'); 
-            const goToPayPalButton = document.getElementById('goToPayPalButton');
-            const returnToSiteButton = document.getElementById('returnToSiteButton');
-            const closePaymentModalButton = document.getElementById('closePaymentModalButton');
-            
-            const enrollProgramButtons = document.querySelectorAll('.enroll-button'); 
-            const scheduleConsultationButton = document.getElementById('scheduleConsultationBtn');
-            const calendlyModal = document.getElementById('calendlyModal');
-            const closeCalendlyModalButton = document.getElementById('closeCalendlyModalButton');
-            const calendlyFrame = document.getElementById('calendlyFrame');
-            const calendlyUrl = "https://cal.com/revenue-booster/15min";
-
-            function showPurchaseModal(programName, programPriceString, numericPrice) { 
-                currentProgramName = programName;
-                currentProgramPriceString = programPriceString;
-                currentNumericPrice = numericPrice;
-
-                if (purchaseModalHeadingElement) {
-                     purchaseModalHeadingElement.textContent = `Confirm Enrollment: ${programName}`;
-                }
-                
-                disclaimerAgreeCheckbox.checked = false;
-                proceedToPaymentButton.disabled = true;
-                purchaseModal.classList.add('active');
-            }
-            
-            function showPaymentModal() { 
-                paymentModalProgramNameDisplay.textContent = currentProgramName; 
-                paymentModalProgramPriceDisplay.textContent = currentProgramPriceString; 
-                const paypalUrl = `https://paypal.me/sellorbuy/${currentNumericPrice}`;
-                goToPayPalButton.href = paypalUrl;
+            proceedBtn.addEventListener('click', () => {
+                if (!disclaimerCheckbox.checked) return;
+                purchaseModal.classList.remove('active');
                 paymentModal.classList.add('active');
-            }
+            });
 
+            transactionInput.addEventListener('input', function() {
+                this.value = this.value.toUpperCase().replace(/[^A-Z0-9]/g, '');
+                const isValid = this.value.length === 17 && isPaypalClicked;
+                
+                verifyFinalBtn.classList.toggle('opacity-50', !isValid);
+                verifyFinalBtn.classList.toggle('cursor-locked', !isValid);
+                
+                if (isValid) {
+                    idFormatHint.className = "text-xs text-green-600 font-medium px-1 text-center";
+                    idFormatHint.textContent = "Format Validated.";
+                } else if (this.value.length > 0) {
+                    this.classList.add('input-error');
+                    idFormatHint.className = "text-xs text-red-500 font-medium px-1 text-center";
+                    idFormatHint.textContent = `Error: Enter the real ID (${this.value.length}/17).`;
+                }
+            });
 
-            enrollProgramButtons.forEach(button => {
-                button.addEventListener('click', (e) => {
-                    e.preventDefault(); 
-                    const programId = button.dataset.programId;
-                    const programName = button.dataset.programName;
-                    const programPriceString = button.dataset.programPrice;
-                    const numericPrice = button.dataset.numericPrice;
+            verifyFinalBtn.addEventListener('click', (e) => {
+                if (!isPaypalClicked || transactionInput.value.length !== 17) {
+                    e.preventDefault();
+                    return;
+                }
+                paymentModal.classList.remove('active');
+                
+                if (currentProgram === 'Discovery Consultation Engagement') {
+                    calendarModal.classList.add('active');
+                    (function(C,A,L){let p=function(a,ar){a.q.push(ar);};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true;}if(ar[0]===L){const api=function(){p(api,arguments);};const namespace=ar[1];api.q=api.q||[];if(typeof namespace==="string"){cal.ns[namespace]=cal.ns[namespace]||api;p(cal.ns[namespace],ar);p(cal,["initNamespace",namespace]);}else p(cal,ar);return;}p(cal,ar);};})(window,"https://app.cal.com/embed/embed.js","init");
+                    Cal("init", "consultation", {origin:"https://cal.com"});
+                    Cal.ns["consultation"]("inline", { elementOrSelector:"#discovery-cal-inline", config: {"layout":"month_view"}, calLink: "revenue-booster/consultation" });
+                } else {
+                    successModal.classList.add('active');
+                }
+            });
 
-                    if (programId === 're') { 
-                        stickWithMasteryButton.dataset.programName = programName;
-                        stickWithMasteryButton.dataset.programPrice = programPriceString;
-                        stickWithMasteryButton.dataset.numericPrice = numericPrice;
-                        otoModal.classList.add('active');
-                    } else { 
-                        showPurchaseModal(programName, programPriceString, numericPrice);
+            enrollButtons.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    currentProgram = btn.dataset.program;
+                    const donation = btn.dataset.donation;
+                    const isConsult = currentProgram === 'Discovery Consultation Engagement';
+
+                    document.getElementById('modalProgramName').textContent = currentProgram;
+                    document.getElementById('finalProgramName').textContent = currentProgram;
+                    document.getElementById('finalProgramPrice').textContent = `$${donation}`;
+                    document.getElementById('paypalFinalBtn').href = `https://paypal.me/sellorbuy/${donation}`;
+                    
+                    if(isConsult) {
+                        document.getElementById('modalPrice').textContent = `Non-Refundable Consultation Donation: $${donation}`;
+                        document.getElementById('modalDescription').innerHTML = `<p class='mb-2'>1. Professional discovery analysis session (60 minutes).</p><p>2. This contribution is non-refundable and final.</p>`;
+                        verifyFinalBtn.textContent = "Verify & Schedule Session";
+                    } else {
+                        document.getElementById('modalPrice').textContent = `Non-Refundable Enrollment Donation: $${donation}`;
+                        document.getElementById('modalDescription').innerHTML = `<p class='mb-2'>1. Full curriculum access and mentorship engagement.</p><p>2. Contributions for digital intellectual property are non-refundable.</p>`;
+                        verifyFinalBtn.textContent = "Verify & Finalize";
                     }
+
+                    disclaimerCheckbox.checked = false;
+                    isPaypalClicked = false;
+                    verificationSection.classList.add('opacity-40');
+                    transactionInput.disabled = true;
+                    transactionInput.classList.add('cursor-locked');
+                    transactionInput.value = '';
+                    transactionInput.classList.remove('input-error');
+                    proceedBtn.classList.replace('opacity-100', 'opacity-50');
+                    proceedBtn.classList.add('cursor-locked');
+                    
+                    purchaseModal.classList.add('active');
+                    document.body.classList.add('modal-open');
                 });
             });
-            
-            // OTO Modal Buttons
-            if (closeOtoModalButton) {
-                closeOtoModalButton.addEventListener('click', () => otoModal.classList.remove('active'));
-            }
-            if (otoModal) {
-                otoModal.addEventListener('click', (event) => { if (event.target === otoModal) otoModal.classList.remove('active'); });
-            }
-            if (upgradeToAdvancedButton) {
-                upgradeToAdvancedButton.addEventListener('click', () => {
-                    const programName = upgradeToAdvancedButton.dataset.programName;
-                    const programPriceString = upgradeToAdvancedButton.dataset.programPrice;
-                    const numericPrice = upgradeToAdvancedButton.dataset.numericPrice;
-                    otoModal.classList.remove('active');
-                    showPurchaseModal(programName, programPriceString, numericPrice);
-                });
-            }
-            if (stickWithMasteryButton) {
-                stickWithMasteryButton.addEventListener('click', () => {
-                    const programName = stickWithMasteryButton.dataset.programName;
-                    const programPriceString = stickWithMasteryButton.dataset.programPrice;
-                    const numericPrice = stickWithMasteryButton.dataset.numericPrice;
-                    otoModal.classList.remove('active');
-                    showPurchaseModal(programName, programPriceString, numericPrice);
-                });
-            }
 
-            // Purchase Disclaimer Modal Buttons
-            if (cancelModalButton) {
-                cancelModalButton.addEventListener('click', () => purchaseModal.classList.remove('active'));
-            }
-            if (closePurchaseModalButton) {
-                closePurchaseModalButton.addEventListener('click', () => purchaseModal.classList.remove('active'));
-            }
-            if (purchaseModal) {
-                purchaseModal.addEventListener('click', (event) => { if (event.target === purchaseModal) purchaseModal.classList.remove('active');});
-            }
-            
-            if (disclaimerAgreeCheckbox) {
-                disclaimerAgreeCheckbox.addEventListener('change', () => {
-                    proceedToPaymentButton.disabled = !disclaimerAgreeCheckbox.checked;
-                });
-            }
+            const closeAll = () => {
+                [purchaseModal, paymentModal, calendarModal, successModal, legalModal].forEach(m => m.classList.remove('active'));
+                document.body.classList.remove('modal-open');
+            };
 
-            if (proceedToPaymentButton) {
-                proceedToPaymentButton.addEventListener('click', () => {
-                    if (!disclaimerAgreeCheckbox.checked) return;
-                    purchaseModal.classList.remove('active');
-                    showPaymentModal(); 
-                });
-            }
+            [document.getElementById('closePurchaseModal'), document.getElementById('closePaymentModal'), document.getElementById('cancelPaymentBtn'), document.getElementById('closeCalendarModal'), document.getElementById('closeSuccessModal'), document.querySelector('.close-success-btn'), document.getElementById('closeLegalModal')].forEach(b => b.onclick = closeAll);
+            window.onclick = (e) => { if (e.target.classList.contains('modal-overlay')) closeAll(); }
 
-            // Payment Modal Buttons
-            if (returnToSiteButton) {
-                returnToSiteButton.addEventListener('click', () => paymentModal.classList.remove('active'));
-            }
-            if (closePaymentModalButton) {
-                closePaymentModalButton.addEventListener('click', () => paymentModal.classList.remove('active'));
-            }
-            if (paymentModal) {
-                paymentModal.addEventListener('click', (event) => { if (event.target === paymentModal) paymentModal.classList.remove('active');});
-            }
-
-            // Calendly Modal Logic
-            if (scheduleConsultationButton) {
-                scheduleConsultationButton.addEventListener('click', (e) => {
-                    e.preventDefault();
-                    if (calendlyFrame) {
-                        calendlyFrame.src = calendlyUrl; // Set src when modal is opened
-                    }
-                    if (calendlyModal) {
-                        calendlyModal.classList.add('active');
-                    }
-                });
-            }
-
-            if (closeCalendlyModalButton) {
-                closeCalendlyModalButton.addEventListener('click', () => {
-                    if (calendlyModal) {
-                        calendlyModal.classList.remove('active');
-                    }
-                    if (calendlyFrame) {
-                        calendlyFrame.src = ""; // Clear src to stop loading/potential background activity
-                    }
-                });
-            }
-            
-            if (calendlyModal) {
-                calendlyModal.addEventListener('click', (event) => { 
-                    if (event.target === calendlyModal) { // Click on overlay itself
-                        calendlyModal.classList.remove('active');
-                        if (calendlyFrame) {
-                            calendlyFrame.src = ""; // Clear src
-                        }
-                    }
-                });
-            }
-
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+            }, { threshold: 0.15 });
+            document.querySelectorAll('.section-fade-in').forEach(s => observer.observe(s));
         });
     </script>
-
 </body>
 </html>
