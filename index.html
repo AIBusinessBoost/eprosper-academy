@@ -7,7 +7,7 @@
     <!-- AI & SEO - Primary Meta Tags -->
     <title>E-Prosper Academy™ | Stop Surviving, Start Commanding Your Legacy</title>
     <meta name="description" content="Acquire 37+ years of elite wisdom. Master Online AI Success, Real Estate Mastery, and Asset Protection Trusts. Stop asking for permission—build your own empire with E-Prosper Academy™.">
-    <meta name="keywords" content="E-Prosper Academy, Online AI Digital Success, Real Estate Mastery, Advanced Real Estate Investment, Asset Protection Trusts, Financial Education, Mentorship, House Flipping Course, AI for Business, Wealth Creation, Investment Strategies, 37+ Years Experience, Financial Literacy, Business Coaching, Private Trusts, Sovereignty">
+    <meta name="keywords" content="E-Prosper Academy, Online AI Digital Success, Real Estate Mastery, Advanced Real Estate Investment, Asset Protection Trusts, Financial Education, Mentorship, House Flipping Course, AI for Business, Wealth Creation, Investment Strategies, 37+ Years Experience, Financial Literacy, Business Coaching, Private Trusts, Financial Independence, Empire Building">
     <link rel="canonical" href="https://eprosper-academy.vercel.app/">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <meta name="author" content="E-Prosper Academy™ Trust">
@@ -232,7 +232,7 @@
         "jobTitle": "Lead Strategist",
         "description": "37+ years of real-world battle-scars in wealth preservation and digital commerce."
       },
-      "knowsAbout": ["Online AI Business", "House Flipping", "Asset Protection Trusts", "Financial Sovereignty"]
+      "knowsAbout": ["Online AI Business", "House Flipping", "Asset Protection Trusts", "Financial Autonomy"]
     }
     </script>
 </head>
@@ -278,7 +278,7 @@
                 </p>
                 <div class="mt-14 flex flex-col sm:flex-row items-center justify-center gap-6">
                     <a href="#programs" class="cta-button-powerful px-14 py-6 text-2xl text-white font-black rounded-none gradient-bg shadow-2xl tracking-widest">
-                        CLAIM YOUR SOVEREIGNTY NOW
+                        CLAIM YOUR TOTAL CONTROL NOW
                     </a>
                 </div>
                 <p class="mt-8 text-sm font-bold tracking-[0.4em] text-white/60 uppercase">Elite Intelligence • Hard-Won Experience • Zero Permission Required</p>
@@ -291,7 +291,7 @@
                     <div>
                         <h2 class="text-4xl font-extrabold text-gray-900 leading-tight">The Foundation of an Empire</h2>
                         <p class="mt-6 text-lg text-gray-600 leading-relaxed">
-                            Following 37 years of navigating markets and securing assets, I stopped asking, "What if?" and started asking, <strong>"What good is knowledge if it isn't weaponized for the next generation?"</strong> E-Prosper Academy™ was established to stop the cycle of guessing and deliver the blueprints used by the top 1% to secure untouchable sovereignty.
+                            Following 37 years of navigating markets and securing assets, I stopped asking, "What if?" and started asking, <strong>"What good is knowledge if it isn't weaponized for the next generation?"</strong> E-Prosper Academy™ was established to stop the cycle of guessing and deliver the blueprints used by the top 1% to secure untouchable dominance.
                         </p>
                     </div>
                     <div class="bg-gray-50 p-12 rounded-3xl border border-gray-100 text-center shadow-xl">
@@ -328,7 +328,7 @@
 
                     <div id="re" class="tab-content program-card hidden">
                         <h3 class="text-3xl font-bold text-gray-800 mb-4 uppercase tracking-tight">Real Estate Fast-Track Blueprint</h3>
-                        <p class="text-gray-600 mb-8 text-lg leading-relaxed">Acquire the high-velocity strategies needed to find, fund, and renovate properties for maximum sovereignty in the modern market.</p>
+                        <p class="text-gray-600 mb-8 text-lg leading-relaxed">Acquire the high-velocity strategies needed to find, fund, and renovate properties for absolute dominance in the modern market.</p>
                         <button class="enroll-button cta-button-powerful px-10 py-5 text-xl text-white font-black rounded-lg gradient-bg shadow-lg" data-program="Real Estate Mastery" data-donation="997">CLAIM ACCESS - $997 DONATION</button>
                     </div>
 
@@ -404,7 +404,7 @@
         </div>
     </footer>
 
-    <!-- MODAL SYSTEM -->
+    <!-- STEP 1: CONFIRMATION MODAL -->
     <div id="purchaseModal" class="modal-overlay">
         <div class="modal-content">
             <button id="closePurchaseModal" class="modal-close-button" aria-label="Close">&times;</button>
@@ -479,7 +479,7 @@
                 Your non-refundable contribution and ID have been submitted for verification. 
                 Academy access credentials will be dispatched to your email within 24 hours.
             </p>
-            <button class="close-success-btn px-10 py-4 text-white font-bold rounded-lg gradient-bg shadow-lg uppercase">Return to Home</button>
+            <button class="close-success-btn px-10 py-4 text-white font-bold rounded-lg gradient-bg shadow-lg uppercase">Return to Academy Home</button>
         </div>
     </div>
 
@@ -568,8 +568,11 @@
             transactionInput.addEventListener('input', function() {
                 this.value = this.value.toUpperCase().replace(/[^A-Z0-9]/g, '');
                 const isValid = this.value.length === 17 && isPaypalClicked;
+                
                 verifyFinalBtn.classList.toggle('opacity-50', !isValid);
+                verifyFinalBtn.classList.toggle('cursor-not-allowed', !isValid);
                 verifyFinalBtn.classList.toggle('cursor-locked', !isValid);
+                
                 if (isValid) {
                     idFormatHint.className = "text-xs text-green-600 font-medium px-1 text-center";
                     idFormatHint.textContent = "Format Validated.";
@@ -586,6 +589,7 @@
                     return;
                 }
                 paymentModal.classList.remove('active');
+                
                 if (currentProgram === 'Discovery Consultation Engagement') {
                     calendarModal.classList.add('active');
                     (function(C,A,L){let p=function(a,ar){a.q.push(ar);};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true;}if(ar[0]===L){const api=function(){p(api,arguments);};const namespace=ar[1];api.q=api.q||[];if(typeof namespace==="string"){cal.ns[namespace]=cal.ns[namespace]||api;p(cal.ns[namespace],ar);p(cal,["initNamespace",namespace]);}else p(cal,ar);return;}p(cal,ar);};})(window,"https://app.cal.com/embed/embed.js","init");
@@ -601,19 +605,22 @@
                     currentProgram = btn.dataset.program;
                     const donation = btn.dataset.donation;
                     const isConsult = currentProgram === 'Discovery Consultation Engagement';
+
                     document.getElementById('modalProgramName').textContent = currentProgram;
                     document.getElementById('finalProgramName').textContent = currentProgram;
                     document.getElementById('finalProgramPrice').textContent = `$${donation}`;
                     document.getElementById('paypalFinalBtn').href = `https://paypal.me/sellorbuy/${donation}`;
+                    
                     if(isConsult) {
                         document.getElementById('modalPrice').textContent = `Non-Refundable Consultation Donation: $${donation}`;
-                        document.getElementById('modalDescription').innerHTML = `<p>1. Professional 60-min discovery analysis session.</p><p>2. This contribution is non-refundable and final.</p>`;
+                        document.getElementById('modalDescription').innerHTML = `<p class='mb-2'>1. Professional 60-min discovery analysis session.</p><p>2. This contribution is non-refundable and final.</p>`;
                         verifyFinalBtn.textContent = "Verify & Schedule Session";
                     } else {
                         document.getElementById('modalPrice').textContent = `Non-Refundable Enrollment Donation: $${donation}`;
-                        document.getElementById('modalDescription').innerHTML = `<p>1. Full high-impact curriculum access.</p><p>2. Contributions for digital intellectual property are non-refundable.</p>`;
+                        document.getElementById('modalDescription').innerHTML = `<p class='mb-2'>1. Full high-impact curriculum access.</p><p>2. Contributions for digital intellectual property are non-refundable.</p>`;
                         verifyFinalBtn.textContent = "Verify & Finalize";
                     }
+
                     disclaimerCheckbox.checked = false;
                     isPaypalClicked = false;
                     verificationSection.classList.add('opacity-40');
@@ -623,6 +630,7 @@
                     transactionInput.classList.remove('input-error');
                     proceedBtn.classList.replace('opacity-100', 'opacity-50');
                     proceedBtn.classList.add('cursor-locked');
+                    
                     purchaseModal.classList.add('active');
                     document.body.classList.add('modal-open');
                 });
