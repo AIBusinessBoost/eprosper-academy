@@ -217,7 +217,7 @@
         .admin-table td { padding: 0.75rem; border-bottom: 1px solid #f3f4f6; }
     </style>
 
-    <!-- Schema.org Data for AI -->
+    <!-- Schema.org Data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -225,7 +225,7 @@
       "name": "E-Prosper Academy™",
       "url": "https://eprosper-academy.vercel.app",
       "logo": "https://cdn.abacus.ai/images/5cef3838-8f06-440f-ba73-723c798abb8a.png",
-      "description": "Elite institutional intelligence for Online AI Success, Real Estate, and Asset Protection.",
+      "description": "Elite institution for Online AI Success, Real Estate, and Asset Protection.",
       "knowsAbout": ["Financial Autonomy", "Real Estate Investing", "AI Automation", "Asset Trusts"]
     }
     </script>
@@ -277,12 +277,12 @@
             </div>
         </section>
 
-        <section id="about" class="py-20 section-fade-in bg-white">
+        <section id="about" class="py-20 bg-white">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
                     <div>
                         <h2 class="text-4xl font-extrabold text-gray-900 leading-tight">The Foundation of an Empire</h2>
-                        <p class="mt-6 text-lg text-gray-600 leading-relaxed">
+                        <p class="mt-6 text-lg text-gray-600 leading-relaxed font-medium">
                             Following 37 years of navigating markets and securing assets, I stopped asking, "What if?" and started asking, <strong>"What good is knowledge if it isn't weaponized for the next generation?"</strong> E-Prosper Academy™ was established to stop the cycle of guessing and deliver the blueprints used by the top 1% to secure untouchable dominance.
                         </p>
                     </div>
@@ -297,7 +297,7 @@
             </div>
         </section>
 
-        <section id="programs" class="py-20 bg-gray-50 section-fade-in border-t border-gray-100">
+        <section id="programs" class="py-20 bg-gray-50 border-t border-gray-100">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-16">
                     <h2 class="text-4xl font-extrabold text-gray-900 uppercase tracking-tight">STOP ASKING FOR PERMISSION. <br><span class="gradient-text">BUILD YOUR OWN EMPIRE.</span></h2>
@@ -325,7 +325,7 @@
 
                     <div id="trusts" class="tab-content program-card hidden">
                         <h3 class="text-3xl font-bold text-gray-800 mb-6 text-center underline decoration-blue-500 uppercase tracking-tight">Discovery Consultation & Private Trusts</h3>
-                        <p class="text-center text-gray-600 mb-8 max-w-2xl mx-auto text-lg leading-relaxed">
+                        <p class="text-center text-gray-600 mb-8 max-w-2xl mx-auto text-lg leading-relaxed font-medium">
                             A private discovery engagement to analyze your current standing and map growth paths using elite foundations. 
                             This 60-minute session evaluates the barriers between you and total asset preservation.
                         </p>
@@ -337,7 +337,7 @@
             </div>
         </section>
 
-        <section id="community" class="py-20 bg-white section-fade-in border-t border-gray-100">
+        <section id="community" class="py-20 bg-white border-t border-gray-100">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
                 <div class="program-card bg-white max-w-4xl mx-auto mb-20 border-2 border-gray-100 shadow-2xl">
                     <h2 class="text-4xl font-black text-gray-900 mb-6 uppercase tracking-tight">The "Inner Circle" of High Achievers</h2>
@@ -365,12 +365,12 @@
             </div>
         </section>
 
-        <section id="disclaimer" class="py-20 bg-gray-50 section-fade-in border-t border-gray-100">
+        <section id="disclaimer" class="py-20 bg-gray-50 border-t border-gray-100">
             <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="bg-white border border-gray-200 p-8 rounded-xl shadow-lg">
                     <h3 class="font-bold text-xl mb-4 text-gray-900 uppercase tracking-tight text-center">Important Disclaimers & Institutional Terms</h3>
                     <div class="text-xs text-gray-600 leading-relaxed space-y-4 max-w-3xl mx-auto text-center font-medium">
-                        <p>All content and discussions within E-Prosper Academy™ programs and communities are for **educational and informational purposes only**. No legal, financial, or investment advice is provided. The academy makes no guarantees regarding specific success or outcomes.</p>
+                        <p>All content and discussions within E-Prosper Academy™ programs and communities are for **educational and informational purposes only**. No legal, financial, or investment advice is provided.</p>
                         <p class="font-black text-gray-800 border-t border-gray-200 pt-4 uppercase">ALL PROGRAM ENROLLMENT DONATIONS ARE FINAL. THERE WILL BE NO REFUNDS AT ANYTIME FOR ANY AMOUNTS DONATED. BY ENROLLING, ENROLLEES ACKNOWLEDGE AND AGREE TO THESE TERMS.</p>
                     </div>
                 </div>
@@ -386,14 +386,13 @@
             <p class="text-gray-400">&copy; 2026 E-Prosper Academy™ Trust. All Rights Reserved.</p>
             <p class="text-sm text-gray-400 mt-2 mb-6 uppercase tracking-widest font-semibold">Your Path to Online Prosperity and Financial Wisdom</p>
             <div class="flex flex-wrap justify-center gap-6 text-sm text-gray-500">
-                <button onclick="openLegalModal('privacy')" class="hover:text-white transition-colors">Privacy Policy</button>
-                <button onclick="openLegalModal('terms')" class="hover:text-white transition-colors">Terms of Enrollment</button>
-                <button onclick="openLegalModal('legal')" class="hover:text-white transition-colors">Disclaimer</button>
+                <button onclick="window.openLegalModal('privacy')" class="hover:text-white transition-colors">Privacy Policy</button>
+                <button onclick="window.openLegalModal('terms')" class="hover:text-white transition-colors">Terms of Enrollment</button>
+                <button onclick="window.openLegalModal('legal')" class="hover:text-white transition-colors">Disclaimer</button>
             </div>
         </div>
     </footer>
 
-    <!-- HIDDEN ADMIN BUTTON -->
     <button id="adminPortalBtn" class="fixed bottom-6 right-6 z-[100] hidden bg-gray-900 text-white px-6 py-3 rounded-full font-black text-xs shadow-2xl uppercase tracking-widest border border-gray-700 hover:bg-black transition-all">Command Center</button>
 
     <!-- STEP 1: RESTORED DETAILED DISCLAIMER MODAL -->
@@ -483,7 +482,7 @@
             <div class="admin-table-container mt-6">
                 <table class="admin-table">
                     <thead><tr><th>Timestamp</th><th>Name</th><th>Email</th><th>Phone</th><th>Program</th><th>Donation ID</th><th>Status</th></tr></thead>
-                    <tbody id="adminLeadsTableBody"><tr><td colspan="7" class="text-center py-10 text-gray-400 uppercase font-black">Listening for intelligence...</td></tr></tbody>
+                    <tbody id="adminLeadsTableBody"><tr><td colspan="7" class="text-center py-10 text-gray-400 uppercase font-black font-medium">Listening for intelligence...</td></tr></tbody>
                 </table>
             </div>
         </div>
@@ -514,88 +513,95 @@
         </div>
     </div>
 
-    <!-- FIREBASE INTEGRATION SCRIPTS -->
     <script type="module">
         import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
         import { getAuth, signInAnonymously, signInWithCustomToken, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
         import { getFirestore, collection, addDoc, onSnapshot, updateDoc, doc, serverTimestamp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
 
-        // GLOBAL LEGAL FUNCTIONS (Explicitly exposed for onclick attributes)
+        /** * FIX 1: DEFINE LEGAL DATA AND FUNCTIONS FIRST 
+         * AND ATTACH TO WINDOW TO PREVENT REFERENCE ERRORS
+         */
         const legalData = {
             privacy: `<h2>Privacy Policy</h2><p>E-Prosper Academy™ is committed to protecting donor information. We do not store financial data on our servers.</p>`,
             terms: `<h2>Terms of Enrollment</h2><p>ALL DONATIONS ARE FINAL. There will be NO REFUNDS at anytime for any amounts donated due to the immediate intellectual nature of the materials.</p>`,
             legal: `<h2>Legal Disclaimer</h2><p>EDUCATIONAL PURPOSES ONLY. No legal, financial, or investment advice is provided.</p>`
         };
 
-        const openLegalModal = (type) => {
+        window.openLegalModal = (type) => {
             const modal = document.getElementById('legalModal');
-            document.getElementById('legalModalBody').innerHTML = legalData[type];
+            document.getElementById('legalModalBody').innerHTML = legalData[type] || '<p>Content unavailable.</p>';
             modal.classList.add('active');
             document.body.classList.add('modal-open');
         };
-        window.openLegalModal = openLegalModal;
 
-        // ENV VARIABLES
-        let firebaseConfig = {};
-        try { firebaseConfig = JSON.parse(__firebase_config); } catch(e) { console.warn("Firebase unavailable."); }
-        
-        const app = initializeApp(firebaseConfig);
-        const auth = getAuth(app);
-        const db = getFirestore(app);
-        const appId = typeof __app_id !== 'undefined' ? __app_id : 'eprosper-leads';
+        /** * FIX 2: ROBUST FIREBASE INITIALIZATION 
+         * WRAP IN TRY-CATCH SO UI STILL WORKS WITHOUT DB
+         */
+        let db = null, auth = null, appId = 'eprosper-leads', user = null;
 
-        let user = null;
-        let currentLeadId = null;
+        try {
+            const configString = typeof __firebase_config !== 'undefined' ? __firebase_config : null;
+            if (configString) {
+                const firebaseConfig = JSON.parse(configString);
+                const app = initializeApp(firebaseConfig);
+                auth = getAuth(app);
+                db = getFirestore(app);
+                appId = typeof __app_id !== 'undefined' ? __app_id : 'eprosper-leads';
 
-        const initAuth = async () => {
-            try {
-                if (typeof __initial_auth_token !== 'undefined' && __initial_auth_token) {
-                    await signInWithCustomToken(auth, __initial_auth_token);
-                } else {
-                    await signInAnonymously(auth);
-                }
-            } catch(e) {}
-        };
-        initAuth();
-        onAuthStateChanged(auth, (u) => { 
-            user = u; 
-            if (user && isAdmin) setupAdminListener();
-        });
+                const initAuth = async () => {
+                    try {
+                        const token = typeof __initial_auth_token !== 'undefined' ? __initial_auth_token : null;
+                        if (token) {
+                            await signInWithCustomToken(auth, token);
+                        } else {
+                            await signInAnonymously(auth);
+                        }
+                    } catch(e) { console.error("Firebase Auth failed:", e); }
+                };
+                initAuth();
+                onAuthStateChanged(auth, (u) => { 
+                    user = u; 
+                    if (user && isAdmin) setupAdminListener();
+                });
+            }
+        } catch (err) {
+            console.warn("Database features disabled: Config missing or invalid.");
+        }
 
         const isAdmin = new URLSearchParams(window.location.search).get('admin') === 'true';
         if (isAdmin) document.getElementById('adminPortalBtn').classList.remove('hidden');
 
         document.addEventListener('DOMContentLoaded', () => {
+            // ELEMENT SELECTORS
             const header = document.getElementById('header');
             const tabButtons = document.querySelectorAll('.tab-button');
             const tabContents = document.querySelectorAll('.tab-content');
             const enrollButtons = document.querySelectorAll('.enroll-button');
-            
             const purchaseModal = document.getElementById('purchaseModal');
             const intakeModal = document.getElementById('intakeModal');
             const paymentModal = document.getElementById('paymentModal');
             const calendarModal = document.getElementById('calendarModal');
             const successModal = document.getElementById('successModal');
             const adminPortalModal = document.getElementById('adminPortalModal');
-            const legalModal = document.getElementById('legalModal');
-            
             const disclaimerCheckbox = document.getElementById('disclaimerCheckbox');
             const proceedToIntakeBtn = document.getElementById('proceedToIntakeBtn');
             const saveAndProceedBtn = document.getElementById('saveAndProceedBtn');
             const paypalFinalBtn = document.getElementById('paypalFinalBtn');
             const transactionInput = document.getElementById('paypalTransactionId');
             const verifyFinalBtn = document.getElementById('verifyFinalBtn');
-            const idFormatHint = document.getElementById('idFormatHint');
             const verificationSection = document.getElementById('verificationSection');
 
             let isPaypalClicked = false;
             let currentProgram = '';
+            let currentLeadId = null;
 
+            // SCROLL LOGIC
             window.addEventListener('scroll', () => {
                 if (window.scrollY > 60) header.classList.add('header-scrolled');
                 else header.classList.remove('header-scrolled');
             });
 
+            // TAB LOGIC
             tabButtons.forEach(btn => {
                 btn.addEventListener('click', () => {
                     tabButtons.forEach(b => b.classList.replace('tab-active', 'tab-inactive'));
@@ -604,6 +610,7 @@
                 });
             });
 
+            // STEP 1 CHECKBOX
             disclaimerCheckbox.addEventListener('change', function() {
                 proceedToIntakeBtn.classList.toggle('opacity-50', !this.checked);
                 proceedToIntakeBtn.classList.toggle('cursor-locked', !this.checked);
@@ -615,6 +622,7 @@
                 intakeModal.classList.add('active');
             });
 
+            // STEP 2 INTAKE
             saveAndProceedBtn.addEventListener('click', async () => {
                 const name = document.getElementById('intakeName').value.trim();
                 const email = document.getElementById('intakeEmail').value.trim();
@@ -625,18 +633,19 @@
                     return;
                 }
 
-                if (user) {
+                if (db && user) {
                     try {
                         const docRef = await addDoc(collection(db, 'artifacts', appId, 'public', 'data', 'leads'), {
                             name, email, phone, program: currentProgram, status: 'Pending Donation', timestamp: serverTimestamp()
                         });
                         currentLeadId = docRef.id;
-                    } catch (e) {}
+                    } catch (e) { console.error("Lead save failed:", e); }
                 }
                 intakeModal.classList.remove('active');
                 paymentModal.classList.add('active');
             });
 
+            // STEP 3 PAYMENT
             paypalFinalBtn.addEventListener('click', () => {
                 isPaypalClicked = true;
                 verificationSection.classList.remove('opacity-40');
@@ -654,7 +663,7 @@
             verifyFinalBtn.addEventListener('click', async () => {
                 if (!isPaypalClicked || transactionInput.value.length !== 17) return;
 
-                if (currentLeadId) {
+                if (db && currentLeadId) {
                     try {
                         const leadRef = doc(db, 'artifacts', appId, 'public', 'data', 'leads', currentLeadId);
                         await updateDoc(leadRef, { transactionId: transactionInput.value, status: 'Verification In Progress' });
@@ -672,7 +681,9 @@
                 }
             });
 
+            // ADMIN PORTAL LISTENER
             function setupAdminListener() {
+                if(!db) return;
                 try {
                     const q = collection(db, 'artifacts', appId, 'public', 'data', 'leads');
                     onSnapshot(q, (snapshot) => {
@@ -698,6 +709,7 @@
                 } catch(e) {}
             }
 
+            // ENROLL BUTTON CLICK HANDLER
             enrollButtons.forEach(btn => {
                 btn.addEventListener('click', () => {
                     currentProgram = btn.dataset.program;
@@ -730,10 +742,12 @@
                 });
             });
 
+            // MODAL CLOSE LOGIC
             document.getElementById('adminPortalBtn').onclick = () => adminPortalModal.classList.add('active');
+            document.getElementById('backToTermsBtn').onclick = () => { intakeModal.classList.remove('active'); purchaseModal.classList.add('active'); };
 
             const closeAll = () => {
-                [purchaseModal, intakeModal, paymentModal, calendarModal, successModal, adminPortalModal, legalModal].forEach(m => m.classList.remove('active'));
+                [purchaseModal, intakeModal, paymentModal, calendarModal, successModal, adminPortalModal, document.getElementById('legalModal')].forEach(m => m.classList.remove('active'));
                 document.body.classList.remove('modal-open');
             };
 
