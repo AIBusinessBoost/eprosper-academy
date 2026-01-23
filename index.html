@@ -7,7 +7,7 @@
     <!-- AI & SEO - Primary Meta Tags -->
     <title>E-Prosper Academy™ | Stop Surviving, Start Commanding Your Legacy</title>
     <meta name="description" content="Acquire 37+ years of elite wisdom. Master Online AI Success, Real Estate Mastery, and Asset Protection Trusts. Stop asking for permission—build your own empire with E-Prosper Academy™.">
-    <meta name="keywords" content="E-Prosper Academy, Online AI Digital Success, Real Estate Mastery, Advanced Real Estate Investment, Asset Protection Trusts, Financial Education, Mentorship, House Flipping Course, AI for Business, Wealth Creation, Investment Strategies, 37+ Years Experience, Financial Literacy, Business Coaching, Private Trusts, Financial Independence, Empire Building">
+    <meta name="keywords" content="E-Prosper Academy, Online AI Digital Success, Real Estate Mastery, Advanced Real Estate Investment, Asset Protection Trusts, Financial Education, Mentorship, AI for Business, Wealth Creation, Investment Strategies, 37+ Years Experience, Financial Literacy, Business Coaching, Private Trusts, Financial Autonomy">
     <link rel="canonical" href="https://eprosper-academy.vercel.app/">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
     <meta name="author" content="E-Prosper Academy™ Trust">
@@ -20,13 +20,6 @@
     <meta property="og:url" content="https://eprosper-academy.vercel.app/">
     <meta property="og:site_name" content="E-Prosper Academy™">
     <meta property="og:image" content="https://cdn.abacus.ai/images/5cef3838-8f06-440f-ba73-723c798abb8a.png">
-    <meta property="og:image:alt" content="E-Prosper Academy™ Logo - Path to Prosperity">
-
-    <!-- SEO - Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="STOP ASKING FOR PERMISSION. BUILD YOUR OWN EMPIRE.">
-    <meta name="twitter:description" content="Tap into 37+ years of real-world scars and high-velocity wins. Claim your seat in the Inner Circle.">
-    <meta name="twitter:image" content="https://cdn.abacus.ai/images/5cef3838-8f06-440f-ba73-723c798abb8a.png">
 
     <!-- Favicon -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎓</text></svg>">
@@ -62,7 +55,6 @@
         }
         .cta-button-powerful:hover { transform: scale(1.05); filter: brightness(1.1); }
 
-        /* CINEMATIC VIDEO BACKGROUND LOCK */
         .hero-video-container {
             position: relative;
             height: auto;
@@ -140,11 +132,10 @@
         .tab-inactive:hover { background-color: #ced4da; border-color: #adb5bd; }
 
         .section-fade-in {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+            opacity: 1; 
+            transform: translateY(0);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
         }
-        .section-fade-in.visible { opacity: 1; transform: translateY(0); }
         
         .program-card {
             background-color: white;
@@ -154,7 +145,6 @@
             border: 1px solid #e5e7eb;
         }
 
-        /* Modal Architecture */
         .modal-overlay {
             position: fixed;
             top: 0; left: 0; right: 0; bottom: 0;
@@ -194,9 +184,6 @@
             display: flex; align-items: center; justify-content: center;
         }
 
-        .legal-content h2 { font-weight: 800; font-size: 1.75rem; margin-top: 1.5rem; margin-bottom: 1rem; color: #111827; }
-        .legal-content p { margin-bottom: 1.25rem; color: #4b5563; line-height: 1.7; font-size: 1rem; }
-
         .engagement-input {
             width: 100%;
             padding: 1.25rem;
@@ -212,12 +199,25 @@
         .engagement-input:disabled { background-color: #f3f4f6; cursor: not-allowed; opacity: 0.7; }
 
         .text-shadow { text-shadow: 0 2px 4px rgba(0,0,0,0.3); }
-        
-        /* Red Striked Circle feedback */
         .cursor-locked { cursor: not-allowed !important; }
+
+        .admin-table-container {
+            width: 100%;
+            overflow-x: auto;
+            border-radius: 0.5rem;
+            border: 1px solid #e5e7eb;
+        }
+        .admin-table {
+            width: 100%;
+            text-align: left;
+            border-collapse: collapse;
+            font-size: 0.875rem;
+        }
+        .admin-table th { background-color: #f9fafb; padding: 0.75rem; border-bottom: 2px solid #e5e7eb; text-transform: uppercase; font-weight: 800; }
+        .admin-table td { padding: 0.75rem; border-bottom: 1px solid #f3f4f6; }
     </style>
 
-    <!-- Schema.org Comprehensive AI Training/SEO Structured Data -->
+    <!-- Schema.org Data for AI -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -225,14 +225,8 @@
       "name": "E-Prosper Academy™",
       "url": "https://eprosper-academy.vercel.app",
       "logo": "https://cdn.abacus.ai/images/5cef3838-8f06-440f-ba73-723c798abb8a.png",
-      "description": "An elite institution delivering 37+ years of intelligence in Online AI success, Real Estate Mastery, and Asset Protection Trusts.",
-      "founder": {
-        "@type": "Person",
-        "name": "The Mentor",
-        "jobTitle": "Lead Strategist",
-        "description": "37+ years of real-world battle-scars in wealth preservation and digital commerce."
-      },
-      "knowsAbout": ["Online AI Business", "House Flipping", "Asset Protection Trusts", "Financial Autonomy"]
+      "description": "Elite institutional intelligence for Online AI Success, Real Estate, and Asset Protection.",
+      "knowsAbout": ["Financial Autonomy", "Real Estate Investing", "AI Automation", "Asset Trusts"]
     }
     </script>
 </head>
@@ -252,7 +246,6 @@
                 <nav class="hidden md:flex items-center space-x-8">
                     <a href="#hero" class="nav-link text-white hover:text-blue-400 font-medium transition-colors duration-500">Home</a>
                     <a href="#about" class="nav-link text-white hover:text-blue-400 font-medium transition-colors duration-500">Academy Philosophy</a>
-                    <!-- COMMUNITY LEFT OF OUR PROGRAMS -->
                     <a href="#community" class="nav-link text-white hover:text-blue-400 font-medium transition-colors duration-500">Community</a>
                     <a href="#programs" class="nav-link text-white hover:text-blue-400 font-medium transition-colors duration-500">Our Programs</a>
                     <a href="#programs" class="px-6 py-2 text-white font-bold rounded-lg gradient-bg hover:scale-105 transition-transform shadow-lg text-shadow">CLAIM ACCESS</a>
@@ -262,7 +255,6 @@
     </header>
 
     <main>
-        <!-- HERO SECTION WITH AGGRESSIVE HOOK -->
         <section id="hero" class="hero-video-container">
             <video autoplay muted loop playsinline class="hero-video">
                 <source src="https://assets.mixkit.co/videos/preview/kit-city-traffic-at-night-from-above-4433-large.mp4" type="video/mp4" onerror="this.parentElement.style.backgroundImage='url(https://images.unsplash.com/photo-1449824913935-59a10b8d2000?auto=format&fit=crop&w=1920&q=80)'">
@@ -305,12 +297,11 @@
             </div>
         </section>
 
-        <!-- PROGRAMS SECTION WITH SECONDARY PUNCH HEADLINE -->
-        <section id="programs" class="py-20 bg-gray-50 section-fade-in">
+        <section id="programs" class="py-20 bg-gray-50 section-fade-in border-t border-gray-100">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div class="text-center mb-16">
                     <h2 class="text-4xl font-extrabold text-gray-900 uppercase tracking-tight">STOP ASKING FOR PERMISSION. <br><span class="gradient-text">BUILD YOUR OWN EMPIRE.</span></h2>
-                    <p class="mt-4 text-xl text-gray-600">Choose the architectural pillar that secures your future.</p>
+                    <p class="mt-4 text-xl text-gray-600 font-medium">Choose the architectural pillar that secures your future.</p>
                 </div>
 
                 <div class="max-w-5xl mx-auto">
@@ -335,8 +326,8 @@
                     <div id="trusts" class="tab-content program-card hidden">
                         <h3 class="text-3xl font-bold text-gray-800 mb-6 text-center underline decoration-blue-500 uppercase tracking-tight">Discovery Consultation & Private Trusts</h3>
                         <p class="text-center text-gray-600 mb-8 max-w-2xl mx-auto text-lg leading-relaxed">
-                            A private discovery engagement to analyze your current standing and map growth paths using elite architectural foundations. 
-                            This 60-minute session evaluates the barriers between you and a fortress-like asset preservation strategy.
+                            A private discovery engagement to analyze your current standing and map growth paths using elite foundations. 
+                            This 60-minute session evaluates the barriers between you and total asset preservation.
                         </p>
                         <div class="flex justify-center">
                             <button class="enroll-button cta-button-powerful px-12 py-6 text-xl text-white font-black rounded-lg gradient-bg shadow-xl" data-program="Discovery Consultation Engagement" data-donation="500">INITIATE DISCOVERY ENGAGEMENT - $500 DONATION</button>
@@ -346,26 +337,26 @@
             </div>
         </section>
 
-        <section id="community" class="py-20 bg-white section-fade-in">
+        <section id="community" class="py-20 bg-white section-fade-in border-t border-gray-100">
             <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-                <div class="program-card bg-white max-w-4xl mx-auto mb-20 border-2 border-gray-100">
+                <div class="program-card bg-white max-w-4xl mx-auto mb-20 border-2 border-gray-100 shadow-2xl">
                     <h2 class="text-4xl font-black text-gray-900 mb-6 uppercase tracking-tight">The "Inner Circle" of High Achievers</h2>
                     <p class="text-xl text-gray-600 leading-relaxed font-medium">
-                        The academy fosters a supportive environment built on elite principles. Admission to the Inner Circle is criteria-based to ensure the highest level of mentorship and peer value.
+                        Membership selection is criteria-based. The academy fosters a supportive environment built on elite principles and direct mentorship to secure untouchable legacies.
                     </p>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
-                    <div class="bg-white p-10 border-t-8 border-blue-500 shadow-xl text-center">
+                    <div class="bg-white p-10 border-t-8 border-blue-500 shadow-xl text-center hover:scale-105 transition-transform">
                         <span class="text-5xl block mb-6">🤝</span>
                         <h3 class="text-2xl font-bold mb-4 uppercase">Elite Peer Network</h3>
-                        <p class="text-gray-600">Connect with individuals who refused to ask for permission and built their own paths.</p>
+                        <p class="text-gray-600">Connect with individuals who refused to ask for permission and built their own empires.</p>
                     </div>
-                    <div class="bg-white p-10 border-t-8 border-teal-500 shadow-xl text-center">
+                    <div class="bg-white p-10 border-t-8 border-teal-500 shadow-xl text-center hover:scale-105 transition-transform">
                         <span class="text-5xl block mb-6">💡</span>
                         <h3 class="text-2xl font-bold mb-4 uppercase">Architect Guidance</h3>
                         <p class="text-gray-600">Receive insights derived from over three decades of professional high-stakes achievements.</p>
                     </div>
-                    <div class="bg-white p-10 border-t-8 border-indigo-500 shadow-xl text-center">
+                    <div class="bg-white p-10 border-t-8 border-indigo-500 shadow-xl text-center hover:scale-105 transition-transform">
                         <span class="text-5xl block mb-6">🗓️</span>
                         <h3 class="text-2xl font-bold mb-4 uppercase">Direct Analysis</h3>
                         <p class="text-gray-600">Engage in discussions focused on real-world practical application and asset preservation.</p>
@@ -374,14 +365,13 @@
             </div>
         </section>
 
-        <section id="disclaimer" class="py-20 bg-white section-fade-in border-t border-gray-100">
+        <section id="disclaimer" class="py-20 bg-gray-50 section-fade-in border-t border-gray-100">
             <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div class="bg-gray-50 border border-gray-200 p-8 rounded-xl shadow-sm text-center md:text-left">
-                    <h3 class="font-bold text-lg mb-3 text-gray-900 uppercase tracking-tight text-center">Important Disclaimers & Engagement Terms</h3>
-                    <div class="text-xs text-gray-600 leading-relaxed space-y-3 max-w-3xl mx-auto">
+                <div class="bg-white border border-gray-200 p-8 rounded-xl shadow-lg">
+                    <h3 class="font-bold text-xl mb-4 text-gray-900 uppercase tracking-tight text-center">Important Disclaimers & Institutional Terms</h3>
+                    <div class="text-xs text-gray-600 leading-relaxed space-y-4 max-w-3xl mx-auto text-center font-medium">
                         <p>All content and discussions within E-Prosper Academy™ programs and communities are for **educational and informational purposes only**. No legal, financial, or investment advice is provided. The academy makes no guarantees regarding specific success or outcomes.</p>
-                        <p>Promotional engagement offers are valid only for new contributions made during the specified period and cannot be retroactively applied.</p>
-                        <p class="font-black text-gray-800 border-t border-gray-200 pt-3 text-center">ALL PROGRAM ENROLLMENT DONATIONS ARE FINAL. THERE WILL BE NO REFUNDS AT ANYTIME FOR ANY AMOUNTS DONATED. BY ENROLLING, ENROLLEES ACKNOWLEDGE AND AGREE TO THESE TERMS.</p>
+                        <p class="font-black text-gray-800 border-t border-gray-200 pt-4 uppercase">ALL PROGRAM ENROLLMENT DONATIONS ARE FINAL. THERE WILL BE NO REFUNDS AT ANYTIME FOR ANY AMOUNTS DONATED. BY ENROLLING, ENROLLEES ACKNOWLEDGE AND AGREE TO THESE TERMS.</p>
                     </div>
                 </div>
             </div>
@@ -391,10 +381,9 @@
     <footer class="bg-gray-900 text-white py-16 border-t border-gray-800">
         <div class="max-w-7xl mx-auto px-4 text-center">
             <div class="bg-white p-2 rounded-xl inline-block mb-10 shadow-lg">
-                <img src="https://cdn.abacus.ai/images/5cef3838-8f06-440f-ba73-723c798abb8a.png" alt="E-Prosper Academy™ Logo - Institutional Seal" class="h-16 w-auto">
+                <img src="https://cdn.abacus.ai/images/5cef3838-8f06-440f-ba73-723c798abb8a.png" alt="Logo" class="h-16 w-auto">
             </div>
             <p class="text-gray-400">&copy; 2026 E-Prosper Academy™ Trust. All Rights Reserved.</p>
-            <!-- TAGLINE BETWEEN COPYRIGHT AND LINKS -->
             <p class="text-sm text-gray-400 mt-2 mb-6 uppercase tracking-widest font-semibold">Your Path to Online Prosperity and Financial Wisdom</p>
             <div class="flex flex-wrap justify-center gap-6 text-sm text-gray-500">
                 <button onclick="openLegalModal('privacy')" class="hover:text-white transition-colors">Privacy Policy</button>
@@ -404,66 +393,106 @@
         </div>
     </footer>
 
-    <!-- STEP 1: CONFIRMATION MODAL -->
+    <!-- HIDDEN ADMIN BUTTON -->
+    <button id="adminPortalBtn" class="fixed bottom-6 right-6 z-[100] hidden bg-gray-900 text-white px-6 py-3 rounded-full font-black text-xs shadow-2xl uppercase tracking-widest border border-gray-700 hover:bg-black transition-all">Command Center</button>
+
+    <!-- STEP 1: RESTORED DETAILED DISCLAIMER MODAL -->
     <div id="purchaseModal" class="modal-overlay">
         <div class="modal-content">
             <button id="closePurchaseModal" class="modal-close-button" aria-label="Close">&times;</button>
-            <h2 id="confirmModalTitle" class="text-3xl font-black mb-6 text-gray-900 uppercase">Confirm Submission</h2>
+            <h2 id="confirmModalTitle" class="text-3xl font-black mb-6 text-gray-900 uppercase tracking-tighter">Confirm Institutional Submission</h2>
             <p id="modalProgramName" class="text-2xl font-bold gradient-text mb-2"></p>
             <p id="modalPrice" class="text-gray-500 text-lg mb-8"></p>
             
-            <div id="modalDescription" class="bg-yellow-50 p-6 border-l-4 border-yellow-400 text-sm mb-6 leading-relaxed text-gray-700"></div>
+            <div id="modalDescription" class="bg-yellow-50 p-6 border-l-4 border-yellow-400 text-sm mb-6 leading-relaxed text-gray-700 max-h-48 overflow-y-auto font-medium">
+                <!-- CONTENT POPULATED VIA JS -->
+            </div>
 
             <div class="flex items-start mb-10">
                 <div class="flex items-center h-5">
                     <input id="disclaimerCheckbox" type="checkbox" class="w-5 h-5 text-blue-600 border-gray-300 rounded focus:ring-blue-500 cursor-pointer">
                 </div>
                 <div class="ml-3 text-sm">
-                    <label for="disclaimerCheckbox" class="font-medium text-gray-900 cursor-pointer select-none leading-relaxed">
-                        I have read, understand, and agree to the E-Prosper Academy™ Important Disclaimers and Terms, including the strict <strong>NO REFUNDS</strong> policy on all donations.
+                    <label for="disclaimerCheckbox" class="font-bold text-gray-900 cursor-pointer select-none leading-relaxed uppercase tracking-tighter">
+                        I have read, understand, and agree to the E-Prosper Academy™ Institutional Terms, including the strict <span class="underline">NO REFUNDS</span> policy on all contributions.
                     </label>
                 </div>
             </div>
 
-            <button id="proceedBtn" class="w-full block text-center py-6 text-white text-2xl font-black rounded-lg gradient-bg shadow-xl opacity-50 cursor-locked transition-all uppercase tracking-widest">PROCEED TO CONTRIBUTION</button>
+            <button id="proceedToIntakeBtn" class="w-full block text-center py-6 text-white text-2xl font-black rounded-lg gradient-bg shadow-xl opacity-50 cursor-locked transition-all uppercase tracking-widest">PROCEED TO INTAKE</button>
         </div>
     </div>
 
+    <!-- STEP 2: INTAKE FORM -->
+    <div id="intakeModal" class="modal-overlay">
+        <div class="modal-content">
+            <button id="closeIntakeModal" class="modal-close-button" aria-label="Close">&times;</button>
+            <h2 class="text-4xl font-black mb-2 text-gray-900 uppercase tracking-tight">Strategic Intake</h2>
+            <p class="text-gray-500 font-bold mb-8 uppercase tracking-widest text-xs italic">Secure your data profile before finalizing contribution.</p>
+            
+            <div class="space-y-6">
+                <div>
+                    <label class="block text-xs font-black uppercase text-gray-400 mb-2 tracking-tighter">Full Legal Name</label>
+                    <input type="text" id="intakeName" placeholder="JOHN DOE" class="engagement-input">
+                </div>
+                <div>
+                    <label class="block text-xs font-black uppercase text-gray-400 mb-2 tracking-tighter">Secure Email Address</label>
+                    <input type="email" id="intakeEmail" placeholder="NAME@EMAIL.COM" class="engagement-input">
+                </div>
+                <div>
+                    <label class="block text-xs font-black uppercase text-gray-400 mb-2 tracking-tighter">Direct Contact Number</label>
+                    <input type="tel" id="intakePhone" placeholder="+1 (555) 000-0000" class="engagement-input">
+                </div>
+            </div>
+            <p id="intakeError" class="text-red-500 text-xs mt-4 font-bold hidden text-center">All fields are required for professional engagement.</p>
+            <button id="saveAndProceedBtn" class="w-full block text-center py-6 mt-10 text-white text-2xl font-black rounded-lg gradient-bg shadow-2xl uppercase tracking-widest hover:scale-105 transition-transform">SECURE & PROCEED</button>
+            <button id="backToTermsBtn" class="w-full text-gray-400 font-bold mt-6 hover:text-gray-800 transition-colors uppercase tracking-[0.2em] text-xs">Back to Terms</button>
+        </div>
+    </div>
+
+    <!-- STEP 3: PAYMENT -->
     <div id="paymentModal" class="modal-overlay">
         <div class="modal-content">
             <button id="closePaymentModal" class="modal-close-button" aria-label="Close">&times;</button>
-            <h2 class="text-4xl font-black mb-4 text-gray-900 text-center uppercase tracking-tight">Finalize Your Commitment</h2>
-            
+            <h2 class="text-4xl font-black mb-4 text-gray-900 text-center uppercase tracking-tight">Finalize Commitment</h2>
             <div class="text-center mb-6">
                 <p id="finalProgramName" class="text-xl font-bold text-gray-900 mb-2"></p>
                 <p id="finalProgramPrice" class="text-3xl font-black gradient-text"></p>
             </div>
-            
             <div class="bg-blue-50 p-6 rounded-lg mb-8 border border-blue-100 text-center">
                 <p class="text-gray-800 font-bold mb-4 uppercase tracking-widest text-sm">Step 1: Open Secure Donation Gateway</p>
                 <a id="paypalFinalBtn" href="#" target="_blank" class="w-full block text-center py-5 text-white text-xl font-black rounded-lg bg-blue-600 shadow-lg hover:bg-blue-700 transition-colors uppercase">Open PayPal Gateway</a>
             </div>
-
             <div id="verificationSection" class="mb-8 opacity-40">
                 <p class="text-gray-800 font-bold mb-4 uppercase tracking-widest text-sm text-center">Step 2: Verify Contribution ID</p>
                 <div class="space-y-2">
                     <input type="text" id="paypalTransactionId" placeholder="Transaction ID (e.g., 82X92842BZ153826K)" class="engagement-input cursor-locked" maxlength="17" disabled>
                     <p id="idFormatHint" class="text-xs text-gray-400 font-medium px-1 italic text-center">Click the PayPal gateway above to enable verification entry.</p>
-                    
                     <button id="verifyFinalBtn" class="cta-button-powerful w-full block text-center py-5 mt-4 text-white text-xl font-black rounded-lg gradient-bg shadow-2xl tracking-tighter opacity-50 cursor-locked uppercase">Verify & Finalize</button>
                 </div>
             </div>
-            
-            <button id="cancelPaymentBtn" class="w-full text-gray-400 font-bold hover:text-gray-800 transition-colors uppercase tracking-[0.2em] text-xs">Cancel and Return</button>
+            <button id="cancelPaymentBtn" class="w-full text-gray-400 font-bold hover:text-gray-800 transition-colors uppercase tracking-[0.2em] text-xs">Return to Home</button>
         </div>
     </div>
 
-    <!-- CALENDAR ISOLATED TO CONSULTATION ONLY -->
+    <!-- SUCCESS & ADMIN MODALS -->
+    <div id="adminPortalModal" class="modal-overlay">
+        <div class="modal-content !max-w-6xl">
+            <button id="closeAdminModal" class="modal-close-button">&times;</button>
+            <h2 class="text-4xl font-black mb-2 text-gray-900 uppercase tracking-tight">Academy Command Center</h2>
+            <div class="admin-table-container mt-6">
+                <table class="admin-table">
+                    <thead><tr><th>Timestamp</th><th>Name</th><th>Email</th><th>Phone</th><th>Program</th><th>Donation ID</th><th>Status</th></tr></thead>
+                    <tbody id="adminLeadsTableBody"><tr><td colspan="7" class="text-center py-10 text-gray-400 uppercase font-black">Listening for intelligence...</td></tr></tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
     <div id="calendarModal" class="modal-overlay">
         <div class="modal-content !max-w-4xl">
             <button id="closeCalendarModal" class="modal-close-button" aria-label="Close">&times;</button>
             <h2 class="text-3xl font-black mb-4 text-gray-900 text-center uppercase tracking-tight">Discovery Analysis Schedule</h2>
-            <p class="text-center text-gray-600 mb-6 font-semibold">Select your time slot for the professional Standing & Growth session.</p>
             <div style="width:100%;height:600px;overflow-y:auto" id="discovery-cal-inline"></div>
         </div>
     </div>
@@ -471,15 +500,10 @@
     <div id="successModal" class="modal-overlay">
         <div class="modal-content text-center">
             <button id="closeSuccessModal" class="modal-close-button" aria-label="Close">&times;</button>
-            <div class="bg-green-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6">
-                <svg class="w-10 h-10 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg>
-            </div>
-            <h2 class="text-3xl font-black text-gray-900 uppercase mb-4">Contribution Recorded</h2>
-            <p class="text-lg text-gray-700 mb-8 leading-relaxed">
-                Your non-refundable contribution and ID have been submitted for verification. 
-                Academy access credentials will be dispatched to your email within 24 hours.
-            </p>
-            <button class="close-success-btn px-10 py-4 text-white font-bold rounded-lg gradient-bg shadow-lg uppercase">Return to Academy Home</button>
+            <div class="bg-green-100 w-20 h-20 rounded-full flex items-center justify-center mx-auto mb-6"><span class="text-4xl">✅</span></div>
+            <h2 class="text-3xl font-black text-gray-900 uppercase mb-4">Intelligence Secured</h2>
+            <p class="text-lg text-gray-700 mb-8 leading-relaxed font-medium">Your contribution ID has been submitted for validation. Academy access credentials will be dispatched to your email within 24 hours.</p>
+            <button class="close-success-btn px-10 py-4 text-white font-bold rounded-lg gradient-bg shadow-lg uppercase">Return to Home</button>
         </div>
     </div>
 
@@ -490,19 +514,56 @@
         </div>
     </div>
 
-    <script>
+    <!-- FIREBASE INTEGRATION SCRIPTS -->
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-app.js";
+        import { getAuth, signInAnonymously, signInWithCustomToken, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-auth.js";
+        import { getFirestore, collection, addDoc, onSnapshot, updateDoc, doc, serverTimestamp } from "https://www.gstatic.com/firebasejs/11.6.1/firebase-firestore.js";
+
+        // GLOBAL LEGAL FUNCTIONS (Explicitly exposed for onclick attributes)
         const legalData = {
             privacy: `<h2>Privacy Policy</h2><p>E-Prosper Academy™ is committed to protecting donor information. We do not store financial data on our servers.</p>`,
             terms: `<h2>Terms of Enrollment</h2><p>ALL DONATIONS ARE FINAL. There will be NO REFUNDS at anytime for any amounts donated due to the immediate intellectual nature of the materials.</p>`,
             legal: `<h2>Legal Disclaimer</h2><p>EDUCATIONAL PURPOSES ONLY. No legal, financial, or investment advice is provided.</p>`
         };
 
-        function openLegalModal(type) {
+        const openLegalModal = (type) => {
             const modal = document.getElementById('legalModal');
             document.getElementById('legalModalBody').innerHTML = legalData[type];
             modal.classList.add('active');
             document.body.classList.add('modal-open');
-        }
+        };
+        window.openLegalModal = openLegalModal;
+
+        // ENV VARIABLES
+        let firebaseConfig = {};
+        try { firebaseConfig = JSON.parse(__firebase_config); } catch(e) { console.warn("Firebase unavailable."); }
+        
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+        const db = getFirestore(app);
+        const appId = typeof __app_id !== 'undefined' ? __app_id : 'eprosper-leads';
+
+        let user = null;
+        let currentLeadId = null;
+
+        const initAuth = async () => {
+            try {
+                if (typeof __initial_auth_token !== 'undefined' && __initial_auth_token) {
+                    await signInWithCustomToken(auth, __initial_auth_token);
+                } else {
+                    await signInAnonymously(auth);
+                }
+            } catch(e) {}
+        };
+        initAuth();
+        onAuthStateChanged(auth, (u) => { 
+            user = u; 
+            if (user && isAdmin) setupAdminListener();
+        });
+
+        const isAdmin = new URLSearchParams(window.location.search).get('admin') === 'true';
+        if (isAdmin) document.getElementById('adminPortalBtn').classList.remove('hidden');
 
         document.addEventListener('DOMContentLoaded', () => {
             const header = document.getElementById('header');
@@ -511,13 +572,16 @@
             const enrollButtons = document.querySelectorAll('.enroll-button');
             
             const purchaseModal = document.getElementById('purchaseModal');
+            const intakeModal = document.getElementById('intakeModal');
             const paymentModal = document.getElementById('paymentModal');
             const calendarModal = document.getElementById('calendarModal');
             const successModal = document.getElementById('successModal');
+            const adminPortalModal = document.getElementById('adminPortalModal');
             const legalModal = document.getElementById('legalModal');
             
             const disclaimerCheckbox = document.getElementById('disclaimerCheckbox');
-            const proceedBtn = document.getElementById('proceedBtn');
+            const proceedToIntakeBtn = document.getElementById('proceedToIntakeBtn');
+            const saveAndProceedBtn = document.getElementById('saveAndProceedBtn');
             const paypalFinalBtn = document.getElementById('paypalFinalBtn');
             const transactionInput = document.getElementById('paypalTransactionId');
             const verifyFinalBtn = document.getElementById('verifyFinalBtn');
@@ -540,56 +604,64 @@
                 });
             });
 
+            disclaimerCheckbox.addEventListener('change', function() {
+                proceedToIntakeBtn.classList.toggle('opacity-50', !this.checked);
+                proceedToIntakeBtn.classList.toggle('cursor-locked', !this.checked);
+            });
+
+            proceedToIntakeBtn.addEventListener('click', () => {
+                if (!disclaimerCheckbox.checked) return;
+                purchaseModal.classList.remove('active');
+                intakeModal.classList.add('active');
+            });
+
+            saveAndProceedBtn.addEventListener('click', async () => {
+                const name = document.getElementById('intakeName').value.trim();
+                const email = document.getElementById('intakeEmail').value.trim();
+                const phone = document.getElementById('intakePhone').value.trim();
+
+                if (!name || !email || !phone) {
+                    document.getElementById('intakeError').classList.remove('hidden');
+                    return;
+                }
+
+                if (user) {
+                    try {
+                        const docRef = await addDoc(collection(db, 'artifacts', appId, 'public', 'data', 'leads'), {
+                            name, email, phone, program: currentProgram, status: 'Pending Donation', timestamp: serverTimestamp()
+                        });
+                        currentLeadId = docRef.id;
+                    } catch (e) {}
+                }
+                intakeModal.classList.remove('active');
+                paymentModal.classList.add('active');
+            });
+
             paypalFinalBtn.addEventListener('click', () => {
                 isPaypalClicked = true;
                 verificationSection.classList.remove('opacity-40');
                 transactionInput.disabled = false;
                 transactionInput.classList.remove('cursor-locked');
-                idFormatHint.classList.remove('italic');
-                idFormatHint.textContent = "Enter your real 17-character Transaction ID.";
-            });
-
-            disclaimerCheckbox.addEventListener('change', function() {
-                if (this.checked) {
-                    proceedBtn.classList.replace('opacity-50', 'opacity-100');
-                    proceedBtn.classList.remove('cursor-locked');
-                } else {
-                    proceedBtn.classList.replace('opacity-100', 'opacity-50');
-                    proceedBtn.classList.add('cursor-locked');
-                }
-            });
-
-            proceedBtn.addEventListener('click', () => {
-                if (!disclaimerCheckbox.checked) return;
-                purchaseModal.classList.remove('active');
-                paymentModal.classList.add('active');
             });
 
             transactionInput.addEventListener('input', function() {
                 this.value = this.value.toUpperCase().replace(/[^A-Z0-9]/g, '');
                 const isValid = this.value.length === 17 && isPaypalClicked;
-                
                 verifyFinalBtn.classList.toggle('opacity-50', !isValid);
-                verifyFinalBtn.classList.toggle('cursor-not-allowed', !isValid);
                 verifyFinalBtn.classList.toggle('cursor-locked', !isValid);
-                
-                if (isValid) {
-                    idFormatHint.className = "text-xs text-green-600 font-medium px-1 text-center";
-                    idFormatHint.textContent = "Format Validated.";
-                } else if (this.value.length > 0) {
-                    this.classList.add('input-error');
-                    idFormatHint.className = "text-xs text-red-500 font-medium px-1 text-center";
-                    idFormatHint.textContent = `Error: Enter the real ID (${this.value.length}/17).`;
-                }
             });
 
-            verifyFinalBtn.addEventListener('click', (e) => {
-                if (!isPaypalClicked || transactionInput.value.length !== 17) {
-                    e.preventDefault();
-                    return;
+            verifyFinalBtn.addEventListener('click', async () => {
+                if (!isPaypalClicked || transactionInput.value.length !== 17) return;
+
+                if (currentLeadId) {
+                    try {
+                        const leadRef = doc(db, 'artifacts', appId, 'public', 'data', 'leads', currentLeadId);
+                        await updateDoc(leadRef, { transactionId: transactionInput.value, status: 'Verification In Progress' });
+                    } catch(e) {}
                 }
+
                 paymentModal.classList.remove('active');
-                
                 if (currentProgram === 'Discovery Consultation Engagement') {
                     calendarModal.classList.add('active');
                     (function(C,A,L){let p=function(a,ar){a.q.push(ar);};let d=C.document;C.Cal=C.Cal||function(){let cal=C.Cal;let ar=arguments;if(!cal.loaded){cal.ns={};cal.q=cal.q||[];d.head.appendChild(d.createElement("script")).src=A;cal.loaded=true;}if(ar[0]===L){const api=function(){p(api,arguments);};const namespace=ar[1];api.q=api.q||[];if(typeof namespace==="string"){cal.ns[namespace]=cal.ns[namespace]||api;p(cal.ns[namespace],ar);p(cal,["initNamespace",namespace]);}else p(cal,ar);return;}p(cal,ar);};})(window,"https://app.cal.com/embed/embed.js","init");
@@ -600,54 +672,73 @@
                 }
             });
 
+            function setupAdminListener() {
+                try {
+                    const q = collection(db, 'artifacts', appId, 'public', 'data', 'leads');
+                    onSnapshot(q, (snapshot) => {
+                        const tbody = document.getElementById('adminLeadsTableBody');
+                        tbody.innerHTML = '';
+                        const leads = [];
+                        snapshot.forEach(doc => leads.push({id: doc.id, ...doc.data()}));
+                        leads.sort((a,b) => (b.timestamp?.seconds || 0) - (a.timestamp?.seconds || 0));
+                        leads.forEach(lead => {
+                            const row = document.createElement('tr');
+                            row.innerHTML = `
+                                <td class="text-xs text-gray-400">${lead.timestamp?.toDate().toLocaleString() || '---'}</td>
+                                <td class="font-bold">${lead.name}</td>
+                                <td>${lead.email}</td>
+                                <td>${lead.phone}</td>
+                                <td class="text-xs font-black uppercase text-blue-600">${lead.program}</td>
+                                <td class="font-mono text-xs">${lead.transactionId || '---'}</td>
+                                <td><span class="px-2 py-1 rounded text-[10px] font-black uppercase ${lead.status === 'Verification In Progress' ? 'bg-green-100 text-green-700' : 'bg-yellow-100 text-yellow-700'}">${lead.status}</span></td>
+                            `;
+                            tbody.appendChild(row);
+                        });
+                    });
+                } catch(e) {}
+            }
+
             enrollButtons.forEach(btn => {
                 btn.addEventListener('click', () => {
                     currentProgram = btn.dataset.program;
                     const donation = btn.dataset.donation;
-                    const isConsult = currentProgram === 'Discovery Consultation Engagement';
-
                     document.getElementById('modalProgramName').textContent = currentProgram;
                     document.getElementById('finalProgramName').textContent = currentProgram;
                     document.getElementById('finalProgramPrice').textContent = `$${donation}`;
                     document.getElementById('paypalFinalBtn').href = `https://paypal.me/sellorbuy/${donation}`;
+                    document.getElementById('modalPrice').textContent = `Non-Refundable Donation: $${donation}`;
                     
-                    if(isConsult) {
-                        document.getElementById('modalPrice').textContent = `Non-Refundable Consultation Donation: $${donation}`;
-                        document.getElementById('modalDescription').innerHTML = `<p class='mb-2'>1. Professional 60-min discovery analysis session.</p><p>2. This contribution is non-refundable and final.</p>`;
-                        verifyFinalBtn.textContent = "Verify & Schedule Session";
-                    } else {
-                        document.getElementById('modalPrice').textContent = `Non-Refundable Enrollment Donation: $${donation}`;
-                        document.getElementById('modalDescription').innerHTML = `<p class='mb-2'>1. Full high-impact curriculum access.</p><p>2. Contributions for digital intellectual property are non-refundable.</p>`;
-                        verifyFinalBtn.textContent = "Verify & Finalize";
-                    }
-
+                    document.getElementById('modalDescription').innerHTML = `
+                        <p class='mb-3 underline uppercase font-black'>Strategic Intellectual Property Warning:</p>
+                        <p class='mb-3'>1. Full high-impact curriculum access is granted immediately upon donation verification.</p>
+                        <p class='mb-3'>2. All educational materials, blueprints, and live sessions are for informational purposes only. No professional legal or investment advice is offered.</p>
+                        <p class='font-black uppercase'>3. ALL CONTRIBUTIONS ARE FINAL. THERE ARE NO REFUNDS AT ANYTIME DUE TO THE PROPRIETARY NATURE OF THE INTELLIGENCE PROVIDED.</p>
+                    `;
+                    
                     disclaimerCheckbox.checked = false;
                     isPaypalClicked = false;
                     verificationSection.classList.add('opacity-40');
                     transactionInput.disabled = true;
                     transactionInput.classList.add('cursor-locked');
                     transactionInput.value = '';
-                    transactionInput.classList.remove('input-error');
-                    proceedBtn.classList.replace('opacity-100', 'opacity-50');
-                    proceedBtn.classList.add('cursor-locked');
+                    proceedToIntakeBtn.classList.replace('opacity-100', 'opacity-50');
+                    proceedToIntakeBtn.classList.add('cursor-locked');
+                    document.getElementById('intakeError').classList.add('hidden');
                     
                     purchaseModal.classList.add('active');
                     document.body.classList.add('modal-open');
                 });
             });
 
+            document.getElementById('adminPortalBtn').onclick = () => adminPortalModal.classList.add('active');
+
             const closeAll = () => {
-                [purchaseModal, paymentModal, calendarModal, successModal, legalModal].forEach(m => m.classList.remove('active'));
+                [purchaseModal, intakeModal, paymentModal, calendarModal, successModal, adminPortalModal, legalModal].forEach(m => m.classList.remove('active'));
                 document.body.classList.remove('modal-open');
             };
 
-            [document.getElementById('closePurchaseModal'), document.getElementById('closePaymentModal'), document.getElementById('cancelPaymentBtn'), document.getElementById('closeCalendarModal'), document.getElementById('closeSuccessModal'), document.querySelector('.close-success-btn'), document.getElementById('closeLegalModal')].forEach(b => b.onclick = closeAll);
+            [document.getElementById('closePurchaseModal'), document.getElementById('closeIntakeModal'), document.getElementById('closePaymentModal'), document.getElementById('closeCalendarModal'), document.getElementById('closeSuccessModal'), document.getElementById('closeAdminModal'), document.querySelector('.close-success-btn'), document.getElementById('closeLegalModal')].forEach(b => b.onclick = closeAll);
             window.onclick = (e) => { if (e.target.classList.contains('modal-overlay')) closeAll(); }
-
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
-            }, { threshold: 0.15 });
-            document.querySelectorAll('.section-fade-in').forEach(s => observer.observe(s));
         });
     </script>
 </body>
